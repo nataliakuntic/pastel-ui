@@ -1,4 +1,4 @@
-import HomePage from "./pages/HomePage";
+import HomePage from "./pastel-ui-website/pages/HomePage";
 
 function App() {
   return <HomePage />;
