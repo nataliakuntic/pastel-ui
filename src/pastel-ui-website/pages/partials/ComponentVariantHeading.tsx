@@ -1,8 +1,28 @@
-function ComponentVariantHeading() {
+interface ComponentVariantHeadingProps
+  extends React.HTMLAttributes<HTMLHeadingElement> {
+  className?: string;
+  children: React.ReactNode;
+}
+
+function ComponentVariantHeading({
+  children,
+  className = "",
+  ...rest
+}: ComponentVariantHeadingProps) {
+  let content: React.ReactNode;
+
+  if (typeof children === "string") {
+    content = children.toUpperCase();
+  } else {
+    content = children;
+  }
   return (
-    <div>
-      <h1>ComponentVariantHeading</h1>
-    </div>
+    <h1
+      {...rest}
+      className={`font-mono text-5xl font-semibold tracking-wide text-gray-800 ${className}`}
+    >
+      {content}
+    </h1>
   );
 }
 

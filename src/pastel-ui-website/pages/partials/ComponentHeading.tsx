@@ -1,8 +1,21 @@
-function ComponentHeading() {
+interface ComponentHeadingProps
+  extends React.HTMLAttributes<HTMLHeadingElement> {
+  className?: string;
+  children: string;
+}
+
+function ComponentHeading({
+  children,
+  className = "",
+  ...rest
+}: ComponentHeadingProps) {
   return (
-    <div>
-      <h1>ComponentHeading</h1>
-    </div>
+    <h1
+      {...rest}
+      className={`font-mono text-5xl font-semibold tracking-wide text-gray-800 ${className}`}
+    >
+      {children}
+    </h1>
   );
 }
 
