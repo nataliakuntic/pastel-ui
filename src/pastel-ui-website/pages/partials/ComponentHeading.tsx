@@ -1,8 +1,5 @@
 interface ComponentHeadingProps
-  extends React.HTMLAttributes<HTMLHeadingElement> {
-  className?: string;
-  children: string;
-}
+  extends React.HTMLAttributes<HTMLHeadingElement> {}
 
 function ComponentHeading({
   children,
