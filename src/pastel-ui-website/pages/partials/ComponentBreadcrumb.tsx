@@ -1,8 +1,18 @@
-function ComponentBreadcrumb() {
+interface ComponentBreadcrumbProps
+  extends React.HTMLAttributes<HTMLDivElement> {}
+
+function ComponentBreadcrumb({
+  children,
+  className = "",
+  ...rest
+}: ComponentBreadcrumbProps) {
   return (
-    <div>
-      <h1>ComponentBreadcrumb</h1>
-    </div>
+    <h5
+      {...rest}
+      className={`uppercase text-sm font-medium font-stretch-expanded text-gray-800 ${className}`}
+    >
+      {children}
+    </h5>
   );
 }
 
