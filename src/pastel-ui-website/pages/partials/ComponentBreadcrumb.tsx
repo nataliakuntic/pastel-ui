@@ -1,5 +1,5 @@
 interface ComponentBreadcrumbProps
-  extends React.HTMLAttributes<HTMLDivElement> {}
+  extends React.HTMLAttributes<HTMLHeadingElement> {}
 
 function ComponentBreadcrumb({
   children,
