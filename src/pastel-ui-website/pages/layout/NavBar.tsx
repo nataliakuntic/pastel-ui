@@ -1,7 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 function NavBar() {
   return (
-    <div>
-      <h1>NavBar</h1>
+    <div className="flex gap-10 items-center">
+      <NavLink to="/">Home Page</NavLink>
+      <NavLink to="/accordion">Accordion</NavLink>
+      <NavLink to="/button">Button</NavLink>
     </div>
   );
 }

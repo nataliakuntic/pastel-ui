@@ -15,7 +15,7 @@ function ButtonPage() {
 
       <ComponentDescription>
         A button triggers an action or event.
-        <span className="font-bold">PastelUI</span> buttons are accessible,
+        <span className="font-bold"> PastelUI</span> buttons are accessible,
         themeable, and flexible.
       </ComponentDescription>
 

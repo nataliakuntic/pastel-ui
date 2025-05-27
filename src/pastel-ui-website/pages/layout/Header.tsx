@@ -1,7 +1,11 @@
+import NavBar from "./NavBar";
+import SmallLogoSVG from "../partials/small_logo.svg?react";
+
 function Header() {
   return (
-    <div>
-      <h1>Header</h1>
+    <div className="flex justify-between p-10">
+      <SmallLogoSVG />
+      <NavBar />
     </div>
   );
 }
