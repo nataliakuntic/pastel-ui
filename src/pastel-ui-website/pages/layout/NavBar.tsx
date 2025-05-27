@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function NavBar() {
+const NavBar: React.FC = () => {
   return (
     <div className="flex gap-10 items-center">
       <NavLink to="/">Home Page</NavLink>
@@ -8,6 +8,6 @@ function NavBar() {
       <NavLink to="/button">Button</NavLink>
     </div>
   );
-}
+};
 
 export default NavBar;

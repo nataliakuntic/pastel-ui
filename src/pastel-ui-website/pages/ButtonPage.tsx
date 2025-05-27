@@ -6,7 +6,7 @@ import ComponentDescription from "./partials/ComponentDescription";
 import ParagraphText from "./partials/ParagraphText";
 import SubsectionHeading from "./partials/SubsectionHeading";
 
-function ButtonPage() {
+const ButtonPage: React.FC = () => {
   return (
     <div>
       <ComponentBreadcrumb>Component/ Button</ComponentBreadcrumb>
@@ -50,6 +50,6 @@ function ButtonPage() {
       <SubsectionHeading>Code:</SubsectionHeading>
     </div>
   );
-}
+};
 
 export default ButtonPage;

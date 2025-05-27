@@ -6,7 +6,7 @@ import ComponentDescription from "./partials/ComponentDescription";
 import ParagraphText from "./partials/ParagraphText";
 import SubsectionHeading from "./partials/SubsectionHeading";
 
-function AccordionPage() {
+const AccordionPage: React.FC = () => {
   return (
     <div>
       <ComponentBreadcrumb>Component/ Accordion</ComponentBreadcrumb>
@@ -83,6 +83,6 @@ function AccordionPage() {
       <SubsectionHeading>Code:</SubsectionHeading>
     </div>
   );
-}
+};
 
 export default AccordionPage;
