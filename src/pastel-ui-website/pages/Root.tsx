@@ -9,7 +9,7 @@ export default function Root() {
   const isHomePage = location.pathname === "/";
 
   return (
-    <div className="max-w-screen-lg mx-auto px-6">
+    <div className="max-w-screen-xl mx-auto px-6">
       <Header />
 
       {!isHomePage && <HeroSubheader />}

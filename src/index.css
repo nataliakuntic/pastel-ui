@@ -9,7 +9,7 @@
     --color-tertiary: #757575; /*sonicSilver*/
     --color-default: #FFFFFF; /*white*/
 
-    /* COLOR SCHEME PICKER */
+    /* MAIN COLORS: COLOR SCHEME PICKER */
 
     --color-success: #D8ECCF; /*mintCream*/
     --color-warning: #E3D996; /*honeyDust*/
@@ -17,31 +17,36 @@
     --color-info: #AFDEE3; /*frostedAqua*/
     --color-muted: #C0B0EE; /*dreamLilac*/
 
-    /*COLOR ACCORDION */
+    /* COLOR ACCORDION EXPANDABLE PANELS */
 
     --color-success-light: #FCFFFC; /*mintVeil*/
     --color-warning-light: #FFFEF7; /*creamVeil*/
     --color-danger-light: #FFFAFA; /*petalVeil*/
     --color-info-light: #FAFFFF; /*frostVeil*/
-    --color-info-muted: 
+    --color-muted-light: #F7F5FF; /*lavenderVeil*/
 
-    /* BRAND */
+
+    /* continue here */
+
+    /* COLOR BUTTON STATES */
+
+    --color-success-button: #A8D5C4; /*pastelMint*/
+
+
+    --color-warning-light: #FFFEF7; /*creamVeil*/
+    --color-danger-light: #FFFAFA; /*petalVeil*/
+    --color-info-light: #FAFFFF; /*frostVeil*/
+    --color-muted-light: #F7F5FF; /*lavenderVeil*/
+
+    /* BRAND COLORS */
 
     --color-hero: #FFE8E8; /*petalPink*/
     --color-platinum: #D9D9D9; /*platinum*/
     --color-whitesmoke: #F5F5F5; /*whiteSmoke*/
     --color-lavenderblue: #D2C2FF; /*lavenderBlue*/
 
-    
+    /* BRAND FONT */
 
-
-
-        --color-midnight: #121063;
-        --color-tahiti: #3ab7bf;
-        --color-bermuda: #78dcca;
-        --color-dustyrose: #E2C3C3; 
-        
-        /* */
-        --color-frostedaqua: #AFDEE3;
-        --color-tertiary: #757575;
+    --font-display: "Inter", "sans-serif";
+   
     }

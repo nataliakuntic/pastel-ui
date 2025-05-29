@@ -1,10 +1,11 @@
-interface ComponentDescription extends React.HTMLAttributes<HTMLDivElement> {}
+interface ComponentDescriptionProps
+  extends React.HTMLAttributes<HTMLDivElement> {}
 
 function ComponentDescription({
   children,
   className = "",
   ...rest
-}: ComponentDescription) {
+}: ComponentDescriptionProps) {
   return (
     <p
       {...rest}
