@@ -1,2 +1,47 @@
 @import "tailwindcss";
 
+@theme {
+
+    /* TEXT */
+
+    --color-primary: #000000; /*black*/
+    --color-secondary: #1E1E1E; /*eerieBlack*/
+    --color-tertiary: #757575; /*sonicSilver*/
+    --color-default: #FFFFFF; /*white*/
+
+    /* COLOR SCHEME PICKER */
+
+    --color-success: #D8ECCF; /*mintCream*/
+    --color-warning: #E3D996; /*honeyDust*/
+    --color-danger: #E2C3C3; /*dustyRose*/
+    --color-info: #AFDEE3; /*frostedAqua*/
+    --color-muted: #C0B0EE; /*dreamLilac*/
+
+    /*COLOR ACCORDION */
+
+    --color-success-light: #FCFFFC; /*mintVeil*/
+    --color-warning-light: #FFFEF7; /*creamVeil*/
+    --color-danger-light: #FFFAFA; /*petalVeil*/
+    --color-info-light: #FAFFFF; /*frostVeil*/
+    --color-info-muted: 
+
+    /* BRAND */
+
+    --color-hero: #FFE8E8; /*petalPink*/
+    --color-platinum: #D9D9D9; /*platinum*/
+    --color-whitesmoke: #F5F5F5; /*whiteSmoke*/
+    --color-lavenderblue: #D2C2FF; /*lavenderBlue*/
+
+    
+
+
+
+        --color-midnight: #121063;
+        --color-tahiti: #3ab7bf;
+        --color-bermuda: #78dcca;
+        --color-dustyrose: #E2C3C3; 
+        
+        /* */
+        --color-frostedaqua: #AFDEE3;
+        --color-tertiary: #757575;
+    }

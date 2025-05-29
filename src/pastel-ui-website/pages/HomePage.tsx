@@ -5,10 +5,12 @@ import ParagraphText from "./partials/ParagraphText";
 import SubsectionHeading from "./partials/SubsectionHeading";
 import ComponentDescription from "./partials/ComponentDescription";
 
-function HomePage() {
+const HomePage: React.FC = () => {
   return (
     <div>
       <h1>HomePage</h1>
+
+      <p className="text-muted">Text</p>
 
       <ComponentBreadcrumb>Components/ Accordion</ComponentBreadcrumb>
       <ComponentHeading>Accordion</ComponentHeading>
@@ -43,6 +45,6 @@ function HomePage() {
       </ComponentVariantHeading>
     </div>
   );
-}
+};
 
 export default HomePage;
