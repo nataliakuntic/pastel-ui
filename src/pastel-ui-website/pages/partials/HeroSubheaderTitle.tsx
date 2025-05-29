@@ -9,7 +9,7 @@ function HeroSubheaderTitle({
   return (
     <h1
       {...rest}
-      className={`font-display text-7xl font-bold font-stretch-expanded text-secondary ${className}`}
+      className={`font-inter text-7xl font-bold text-secondary ${className}`}
     >
       {children}
     </h1>

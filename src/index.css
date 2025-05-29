@@ -45,8 +45,9 @@
     --color-whitesmoke: #F5F5F5; /*whiteSmoke*/
     --color-lavenderblue: #D2C2FF; /*lavenderBlue*/
 
-    /* BRAND FONT */
+    /* BRAND FONTS */
 
-    --font-display: "Inter", "sans-serif";
+    --font-inter: "Inter", "sans-serif";
+    --font-roboto: "Roboto Mono", "mono";
    
     }

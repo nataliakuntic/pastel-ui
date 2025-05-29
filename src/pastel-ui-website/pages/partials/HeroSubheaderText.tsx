@@ -9,7 +9,7 @@ function HeroSubheaderText({
   return (
     <h2
       {...rest}
-      className={`font-display text-3xl tracking-wide text-tertiary ${className}`}
+      className={`font-inter text-3xl tracking-wide text-tertiary ${className}`}
     >
       {children}
     </h2>

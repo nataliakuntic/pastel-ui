@@ -9,7 +9,7 @@ function ComponentVariantHeading({
   return (
     <h1
       {...rest}
-      className={`uppercase font-mono text-5xl font-semibold tracking-wide text-primary ${className}`}
+      className={`uppercase font-roboto text-5xl font-bold tracking-wider text-primary ${className}`}
     >
       {children}
     </h1>
