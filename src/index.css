@@ -19,6 +19,7 @@
 
     /* COLOR ACCORDION EXPANDABLE PANELS */
 
+    --color-default-dark: #F9FAFB; /*systemVeil*/
     --color-success-light: #FCFFFC; /*mintVeil*/
     --color-warning-light: #FFFEF7; /*creamVeil*/
     --color-danger-light: #FFFAFA; /*petalVeil*/

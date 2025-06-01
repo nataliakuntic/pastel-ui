@@ -47,7 +47,7 @@ const AccordionPage: React.FC = () => {
 
       <ComponentVariantHeading>Simple + All Panels</ComponentVariantHeading>
 
-      <Accordion items={items} />
+      <Accordion items={items} multiple />
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
@@ -73,7 +73,7 @@ const AccordionPage: React.FC = () => {
         behaves
       </ParagraphText>
 
-      <Accordion items={items} />
+      <Accordion items={items} className="rounded-2xl overflow-hidden" />
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
@@ -85,7 +85,7 @@ const AccordionPage: React.FC = () => {
         behaves
       </ParagraphText>
 
-      <Accordion items={items} />
+      <Accordion items={items} multiple />
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
@@ -99,7 +99,11 @@ const AccordionPage: React.FC = () => {
         behaves
       </ParagraphText>
 
-      <Accordion items={items} />
+      <Accordion
+        items={items}
+        multiple
+        className="rounded-2xl overflow-hidden"
+      />
 
       <SubsectionHeading>Code:</SubsectionHeading>
     </div>
