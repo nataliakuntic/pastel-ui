@@ -8,13 +8,13 @@ interface AccordionProps {
     content: string;
   }[];
   multiple?: boolean;
-  className?: string;
+  roundedPanels?: boolean;
 }
 
 const Accordion: React.FC<AccordionProps> = ({
   items,
   multiple = false,
-  className = "",
+  roundedPanels = false,
 }) => {
   const [expandedIndex, setExpandedIndex] = useState<number>(-1);
   const [expandedIndexes, setExpandedIndexes] = useState<number[]>([]);
@@ -35,7 +35,6 @@ const Accordion: React.FC<AccordionProps> = ({
     const isExpanded = multiple
       ? expandedIndexes.includes(index)
       : index === expandedIndex;
-
     const isLast = items.length - 1 === index;
 
     const icon = (
@@ -45,11 +44,15 @@ const Accordion: React.FC<AccordionProps> = ({
     );
 
     return (
-      <div key={item.id}>
+      <div key={item.id} className={roundedPanels ? "mb-2" : ""}>
         <div
           className={`flex justify-between p-3 bg-default-dark ${
-            !isLast || isExpanded ? "border-b" : ""
-          } items-center cursor-pointer`}
+            !roundedPanels && (!isLast || isExpanded) ? "border-b" : ""
+          } items-center cursor-pointer ${
+            roundedPanels
+              ? `rounded-2xl border ${isExpanded ? "border-b-0" : ""}`
+              : ""
+          }`}
           onClick={() => handleClick(index)}
         >
           <div className="pl-3 text-secondary font-semibold font-inter">
@@ -58,7 +61,11 @@ const Accordion: React.FC<AccordionProps> = ({
           {icon}
         </div>
         {isExpanded && (
-          <div className={`${!isLast ? "border-b" : ""} p-5`}>
+          <div
+            className={`${!roundedPanels && !isLast ? "border-b" : ""} p-5 ${
+              roundedPanels ? "rounded-2xl border" : ""
+            }`}
+          >
             {item.content}
           </div>
         )}
@@ -67,7 +74,9 @@ const Accordion: React.FC<AccordionProps> = ({
   });
 
   return (
-    <div className={`my-3 max-w-2/3 border ${className}`}>{renderedItems}</div>
+    <div className={`my-3 max-w-2/3 ${roundedPanels ? "" : "border"}`}>
+      {renderedItems}
+    </div>
   );
 };
 

@@ -73,7 +73,7 @@ const AccordionPage: React.FC = () => {
         behaves
       </ParagraphText>
 
-      <Accordion items={items} className="rounded-2xl overflow-hidden" />
+      <Accordion items={items} roundedPanels />
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
@@ -99,11 +99,7 @@ const AccordionPage: React.FC = () => {
         behaves
       </ParagraphText>
 
-      <Accordion
-        items={items}
-        multiple
-        className="rounded-2xl overflow-hidden"
-      />
+      <Accordion items={items} multiple roundedPanels />
 
       <SubsectionHeading>Code:</SubsectionHeading>
     </div>
