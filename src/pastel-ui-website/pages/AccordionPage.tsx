@@ -5,6 +5,7 @@ import ComponentBreadcrumb from "./partials/ComponentBreadcrumb";
 import ComponentDescription from "./partials/ComponentDescription";
 import ParagraphText from "./partials/ParagraphText";
 import SubsectionHeading from "./partials/SubsectionHeading";
+import ColorSchemePicker from "./partials/ColorSchemePicker";
 
 const AccordionPage: React.FC = () => {
   const items = [
@@ -59,6 +60,8 @@ const AccordionPage: React.FC = () => {
         behaves
       </ParagraphText>
 
+      <ColorSchemePicker />
+
       <Accordion items={items} />
 
       <SubsectionHeading>Code:</SubsectionHeading>
@@ -73,6 +76,8 @@ const AccordionPage: React.FC = () => {
         behaves
       </ParagraphText>
 
+      <ColorSchemePicker />
+
       <Accordion items={items} roundedPanels />
 
       <SubsectionHeading>Code:</SubsectionHeading>
@@ -84,6 +89,8 @@ const AccordionPage: React.FC = () => {
         <span className="font-bold"> click</span> on the button to see how it
         behaves
       </ParagraphText>
+
+      <ColorSchemePicker />
 
       <Accordion items={items} multiple />
 
@@ -98,6 +105,8 @@ const AccordionPage: React.FC = () => {
         <span className="font-bold"> click</span> on the button to see how it
         behaves
       </ParagraphText>
+
+      <ColorSchemePicker />
 
       <Accordion items={items} multiple roundedPanels />
 
