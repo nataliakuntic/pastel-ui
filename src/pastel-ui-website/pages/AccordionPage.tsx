@@ -6,8 +6,10 @@ import ComponentDescription from "./partials/ComponentDescription";
 import ParagraphText from "./partials/ParagraphText";
 import SubsectionHeading from "./partials/SubsectionHeading";
 import ColorSchemePicker from "./partials/ColorSchemePicker";
+import { useState } from "react";
 
 const AccordionPage: React.FC = () => {
+  const [scheme, setScheme] = useState("default");
   const items = [
     {
       id: "random1",
@@ -60,9 +62,9 @@ const AccordionPage: React.FC = () => {
         behaves
       </ParagraphText>
 
-      <ColorSchemePicker />
+      <ColorSchemePicker onSelect={setScheme} />
 
-      <Accordion items={items} />
+      <Accordion items={items} colorScheme={scheme} />
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
@@ -70,29 +72,13 @@ const AccordionPage: React.FC = () => {
         Color + One Panel Rounded
       </ComponentVariantHeading>
 
-      <ParagraphText>
-        <span className="font-bold">Hover over</span> and
-        <span className="font-bold"> click</span> on the button to see how it
-        behaves
-      </ParagraphText>
-
-      <ColorSchemePicker />
-
-      <Accordion items={items} roundedPanels />
+      <Accordion items={items} roundedPanels colorScheme={scheme} />
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
       <ComponentVariantHeading>Color + All Panels</ComponentVariantHeading>
 
-      <ParagraphText>
-        <span className="font-bold">Hover over</span> and
-        <span className="font-bold"> click</span> on the button to see how it
-        behaves
-      </ParagraphText>
-
-      <ColorSchemePicker />
-
-      <Accordion items={items} multiple />
+      <Accordion items={items} multiple colorScheme={scheme} />
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
@@ -100,15 +86,7 @@ const AccordionPage: React.FC = () => {
         Color + All Panels Rounded
       </ComponentVariantHeading>
 
-      <ParagraphText>
-        <span className="font-bold">Hover over</span> and
-        <span className="font-bold"> click</span> on the button to see how it
-        behaves
-      </ParagraphText>
-
-      <ColorSchemePicker />
-
-      <Accordion items={items} multiple roundedPanels />
+      <Accordion items={items} multiple roundedPanels colorScheme={scheme} />
 
       <SubsectionHeading>Code:</SubsectionHeading>
     </div>

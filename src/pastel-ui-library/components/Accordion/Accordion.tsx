@@ -9,13 +9,55 @@ interface AccordionProps {
   }[];
   multiple?: boolean;
   roundedPanels?: boolean;
+  colorScheme?: string;
 }
 
+interface AccordionColorScheme {
+  labelBg: string;
+  contentBg: string;
+  border: string;
+}
+
+const colorSchemes: Record<string, AccordionColorScheme> = {
+  default: {
+    labelBg: "bg-default-dark",
+    contentBg: "bg-default",
+    border: "bg-primary",
+  },
+  danger: {
+    labelBg: "bg-danger",
+    contentBg: "bg-danger-light",
+    border: "border-danger border-2",
+  },
+  success: {
+    labelBg: "bg-success",
+    contentBg: "bg-success-light",
+    border: "border-success border-2",
+  },
+  warning: {
+    labelBg: "bg-warning",
+    contentBg: "bg-warning-light",
+    border: "border-warning border-2",
+  },
+  muted: {
+    labelBg: "bg-muted",
+    contentBg: "bg-muted-light",
+    border: "border-muted border-2",
+  },
+  info: {
+    labelBg: "bg-info",
+    contentBg: "bg-info-light",
+    border: "border-info border-2",
+  },
+};
 const Accordion: React.FC<AccordionProps> = ({
   items,
   multiple = false,
   roundedPanels = false,
+  colorScheme,
 }) => {
+  const scheme = colorSchemes[colorScheme || "default"];
+
   const [expandedIndex, setExpandedIndex] = useState<number>(-1);
   const [expandedIndexes, setExpandedIndexes] = useState<number[]>([]);
 
@@ -46,7 +88,9 @@ const Accordion: React.FC<AccordionProps> = ({
     return (
       <div key={item.id} className={roundedPanels ? "mb-2" : ""}>
         <div
-          className={`flex justify-between p-3 bg-default-dark ${
+          className={`${scheme.labelBg} ${
+            scheme.border
+          } flex justify-between p-3 ${
             !roundedPanels && (!isLast || isExpanded) ? "border-b" : ""
           } items-center cursor-pointer ${
             roundedPanels
@@ -55,7 +99,7 @@ const Accordion: React.FC<AccordionProps> = ({
           }`}
           onClick={() => handleClick(index)}
         >
-          <div className="pl-3 text-secondary font-semibold font-inter">
+          <div className={`pl-3 text-secondary font-semibold font-inter`}>
             {item.label}
           </div>
           {icon}
@@ -63,8 +107,9 @@ const Accordion: React.FC<AccordionProps> = ({
         {isExpanded && (
           <div
             className={`${!roundedPanels && !isLast ? "border-b" : ""} p-5 ${
-              roundedPanels ? "rounded-2xl border" : ""
-            }`}
+              scheme.contentBg
+            } 
+             ${roundedPanels ? "rounded-2xl border" : ""} ${scheme.border}`}
           >
             {item.content}
           </div>
