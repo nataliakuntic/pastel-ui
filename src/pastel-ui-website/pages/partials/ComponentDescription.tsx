@@ -9,7 +9,7 @@ function ComponentDescription({
   return (
     <p
       {...rest}
-      className={`font-roboto text-sm tracking-wider text-primary ${className}`}
+      className={`font-roboto mb-10 text-sm tracking-wider text-primary ${className}`}
     >
       <span className={`bg-platinum ${className}`}>{children} </span>
     </p>

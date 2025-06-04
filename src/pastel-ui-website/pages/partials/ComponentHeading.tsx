@@ -9,7 +9,7 @@ function ComponentHeading({
   return (
     <h1
       {...rest}
-      className={`font-roboto text-5xl font-bold text-primary ${className}`}
+      className={`font-roboto mb-4 text-5xl font-bold text-primary ${className}`}
     >
       {children}
     </h1>

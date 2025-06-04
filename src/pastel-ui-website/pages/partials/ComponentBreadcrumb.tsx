@@ -9,7 +9,7 @@ function ComponentBreadcrumb({
   return (
     <h5
       {...rest}
-      className={`uppercase text-sm font-medium font-stretch-expanded text-primary ${className}`}
+      className={`mt-7 mb-3 uppercase text-sm font-medium font-inter tracking-wide text-secondary ${className}`}
     >
       {children}
     </h5>

@@ -4,7 +4,7 @@ interface ColorSchemePickerProps {
 
 const ColorSchemePicker: React.FC<ColorSchemePickerProps> = ({ onSelect }) => {
   return (
-    <div className="flex flex-row gap-5 mt-10 m-7">
+    <div className="flex flex-row gap-5 m-7">
       <button
         className="w-7 h-7 rounded-full bg-danger cursor-pointer"
         onClick={() => onSelect("danger")}

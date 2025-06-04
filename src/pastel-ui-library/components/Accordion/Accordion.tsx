@@ -22,7 +22,7 @@ const colorSchemes: Record<string, AccordionColorScheme> = {
   default: {
     labelBg: "bg-default-dark",
     contentBg: "bg-default",
-    border: "bg-primary",
+    border: "border-primary",
   },
   danger: {
     labelBg: "bg-danger",
@@ -88,13 +88,13 @@ const Accordion: React.FC<AccordionProps> = ({
     return (
       <div key={item.id} className={roundedPanels ? "mb-2" : ""}>
         <div
-          className={`${scheme.labelBg} ${
-            scheme.border
-          } flex justify-between p-3 ${
+          className={`${scheme.labelBg}  flex justify-between p-3 ${
             !roundedPanels && (!isLast || isExpanded) ? "border-b" : ""
           } items-center cursor-pointer ${
             roundedPanels
-              ? `rounded-2xl border ${isExpanded ? "border-b-0" : ""}`
+              ? `rounded-2xl ${scheme.border} border ${
+                  isExpanded ? "border-b-0" : ""
+                }`
               : ""
           }`}
           onClick={() => handleClick(index)}
@@ -109,7 +109,7 @@ const Accordion: React.FC<AccordionProps> = ({
             className={`${!roundedPanels && !isLast ? "border-b" : ""} p-5 ${
               scheme.contentBg
             } 
-             ${roundedPanels ? "rounded-2xl border" : ""} ${scheme.border}`}
+             ${roundedPanels ? `rounded-2xl ${scheme.border} border` : ""} `}
           >
             {item.content}
           </div>
