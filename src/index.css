@@ -31,6 +31,12 @@
 
     /* COLOR BUTTON STATES */
 
+    /* danger*/
+
+--color-button-danger: #E2C3C3; /*dustyRose*/
+--color-button-danger-light: #F7F1F1;
+--color-button-danger-disabled: #F1DDDD;
+
     --color-success-button: #A8D5C4; /*pastelMint*/
 
 

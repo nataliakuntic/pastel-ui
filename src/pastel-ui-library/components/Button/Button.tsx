@@ -1,9 +1,10 @@
-function Button() {
-  return (
-    <div>
-      <h1>Button</h1>
-    </div>
-  );
+interface ButtonProps {
+  colorScheme?: string;
+  children: string;
 }
+
+const Button: React.FC<ButtonProps> = ({ children }) => {
+  return <button>{children}</button>;
+};
 
 export default Button;

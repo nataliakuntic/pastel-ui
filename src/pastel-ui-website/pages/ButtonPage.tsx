@@ -5,6 +5,10 @@ import ComponentBreadcrumb from "./partials/ComponentBreadcrumb";
 import ComponentDescription from "./partials/ComponentDescription";
 import ParagraphText from "./partials/ParagraphText";
 import SubsectionHeading from "./partials/SubsectionHeading";
+import ColorSchemePicker from "./partials/ColorSchemePicker";
+import { useState } from "react";
+
+const [scheme, setScheme] = useState("danger");
 
 const ButtonPage: React.FC = () => {
   return (
@@ -27,10 +31,12 @@ const ButtonPage: React.FC = () => {
         behaves
       </ParagraphText>
 
-      <Button />
-      <Button />
-      <Button />
-      <Button />
+      <ColorSchemePicker onSelect={setScheme} />
+
+      <Button colorScheme={scheme}>ACCEPT</Button>
+      <Button colorScheme={scheme}>READ MORE</Button>
+      <Button colorScheme={scheme}>DELETE</Button>
+      <Button colorScheme={scheme}>DISABLED</Button>
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
@@ -42,10 +48,10 @@ const ButtonPage: React.FC = () => {
         behaves
       </ParagraphText>
 
-      <Button />
-      <Button />
-      <Button />
-      <Button />
+      <Button colorScheme={scheme}>ACCEPT</Button>
+      <Button colorScheme={scheme}>READ MORE</Button>
+      <Button colorScheme={scheme}>DELETE</Button>
+      <Button colorScheme={scheme}>DISABLED</Button>
 
       <SubsectionHeading>Code:</SubsectionHeading>
     </div>
