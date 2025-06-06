@@ -8,6 +8,8 @@
     --color-secondary: #1E1E1E; /*eerieBlack*/
     --color-tertiary: #757575; /*sonicSilver*/
     --color-default: #FFFFFF; /*white*/
+    --color-button-text: #2F3E3E; /*deepPine*/
+    --color-button-text-on-dark: #FFFFFF; /*white*/
 
     /* MAIN COLORS: COLOR SCHEME PICKER */
 
@@ -27,23 +29,93 @@
     --color-muted-light: #F7F5FF; /*lavenderVeil*/
 
 
-    /* continue here */
-
     /* COLOR BUTTON STATES */
 
-    /* danger*/
+    /*main text*/
 
---color-button-danger: #E2C3C3; /*dustyRose*/
---color-button-danger-light: #F7F1F1;
---color-button-danger-disabled: #F1DDDD;
+    --color-button-text: #2F3E3E; /*deepPine*/
+    --color-button-text-on-dark: #FFFFFF; /*white*/
 
-    --color-success-button: #A8D5C4; /*pastelMint*/
+    /*active state stroke*/
 
+    --color-button-active-stroke: #696969; /*ironGray*/
 
-    --color-warning-light: #FFFEF7; /*creamVeil*/
-    --color-danger-light: #FFFAFA; /*petalVeil*/
-    --color-info-light: #FAFFFF; /*frostVeil*/
-    --color-muted-light: #F7F5FF; /*lavenderVeil*/
+    /*danger*/
+
+   --color-button-danger-primary: #E2C3C3; /*dustyRose*/
+   --color-button-danger-secondary: #F7F1F1; /*pinkSnow*/
+   --color-button-danger-disabled: #F1DDDD; /*blushCloud*/
+   --color-button-danger-hover: #D89A9A; /*rosePetal*/
+   --color-button-danger-active: #C88282; /*vintageRose*/
+
+   --color-button-danger-stroke: #D6BABA; /*mauveDust*/
+   --color-button-warning-delete-stroke: #E2C3C3; /*dustyRose*/
+   --color-button-danger-disabled-stroke: #E5C7C7; /*blushBeige*/
+   --color-button-danger-focus-stroke: #B86464; /*crimsonClay*/
+
+   --color-button-danger-disabled-text: #A68A8A; /*antiqueRose*/
+
+    /*success*/
+
+   --color-button-success-primary: #A8D5C4; /*pastelMint*/
+   --color-button-success-secondary: #DBF2EC; /*seaFoam*/
+   --color-button-success-disabled: #D6E6DE; /*mistyMint*/
+   --color-button-success-hover: #D8ECCF; /*mintCream*/
+   --color-button-success-active: #78B5A1; /*mossTeal*/
+
+   --color-button-success-stroke: #2F3E3E; /*deepPine*/
+   --color-button-warning-delete-stroke: #A8D5C4; /*pastelMint*/
+   --color-button-success-disabled-stroke: #7D9B91; /*fadedPine*/
+   --color-button-success-focus-stroke: #5FA99B; /*tealLeaf*/
+
+   --color-button-success-disabled-text: #7D9B91; /*fadedPine*/
+    
+    /*warning*/
+
+    --color-button-warning-primary: #E3D996; /*honeyDust*/
+    --color-button-warning-secondary: #FFF9D5; /*paleSun*/
+    --color-button-warning-disabled: #F8F3DB; /*ivoryMist*/
+    --color-button-warning-hover: #EBD47C; /*butterGold*/
+    --color-button-warning-active: #D7BE5D; /*amberGrain*/
+
+    --color-button-warning-stroke: #A19F92; /*fadedStone*/
+    --color-button-warning-delete-stroke: #E3D996; /*honeyDust*/
+    --color-button-warning-disabled-stroke: #E2D6B4; /*oatBeige*/
+    --color-button-warning-focus-stroke: #BFA73F; /*harvestGold*/
+
+    --color-button-warning-disabled-text: #A09060; /*rusticOlive*/
+
+    /*info*/
+    
+    --color-button-info-primary: #AFDEE3; /*frostedAqua*/
+    --color-button-info-secondary: #E4F6F8; /*iceMist*/
+    --color-button-info-disabled: #E3EFF4; /*paleSky*/
+    --color-button-info-hover: #588389; /*stormTeal*/
+    --color-button-info-active: #48BDC3; /*aquaStone*/
+    
+    --color-button-info-stroke: #8C8C8C; /*softGraphite*/
+    --color-button-info-delete-stroke: #AFDEE3; /*frostedAqua*/
+    --color-button-info-disabled-stroke: #D3E3EA; /*cloudyBlue*/
+    --color-button-info-focus-stroke: #569AB7; /*coolLagoon*/
+    
+    --color-button-info-disabled-text: #92AAB2; /*dustyIce*/
+
+    /*muted*/
+    
+    --color-button-info-primary: #C0B0EE; /*dreamLilac*/
+    --color-button-info-secondary: #F3EFFF; /*lavenderFog*/
+    --color-button-info-disabled: #EEE7F4; /*palePlum*/
+    --color-button-info-hover: #685C89; /*violetCoal*/
+    --color-button-info-active: #B49AD7; /*fadedIris*/
+    
+    --color-button-info-stroke: #C7B3DF; /*powderLilac*/
+    --color-button-info-delete-stroke: #C0B0EE; /*dreamLilac*/
+    --color-button-info-disabled-stroke: #D6CCE6; /*hazyLavender*/
+    --color-button-info-focus-stroke: #9672BE; /*orchidMist*/
+    
+    --color-button-info-disabled-text: #9B8FA9; /*softAmethyst*/
+
+  
 
     /* BRAND COLORS */
 
