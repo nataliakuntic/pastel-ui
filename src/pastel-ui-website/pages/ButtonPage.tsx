@@ -8,9 +8,10 @@ import SubsectionHeading from "./partials/SubsectionHeading";
 import ColorSchemePicker from "./partials/ColorSchemePicker";
 import { useState } from "react";
 
-const [scheme, setScheme] = useState("danger");
-
 const ButtonPage: React.FC = () => {
+  const [scheme, setScheme] = useState<
+    "danger" | "success" | "warning" | "info" | "muted"
+  >("danger");
   return (
     <div>
       <ComponentBreadcrumb>Component/ Button</ComponentBreadcrumb>
@@ -33,10 +34,12 @@ const ButtonPage: React.FC = () => {
 
       <ColorSchemePicker onSelect={setScheme} />
 
-      <Button colorScheme={scheme}>ACCEPT</Button>
-      <Button colorScheme={scheme}>READ MORE</Button>
-      <Button colorScheme={scheme}>DELETE</Button>
-      <Button colorScheme={scheme}>DISABLED</Button>
+      <div className="ml-7 mt-10 flex flex-row gap-8">
+        <Button colorScheme={scheme}>ACCEPT</Button>
+        <Button colorScheme={scheme}>READ MORE</Button>
+        <Button colorScheme={scheme}>DELETE</Button>
+        <Button colorScheme={scheme}>DISABLED</Button>
+      </div>
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
@@ -48,10 +51,28 @@ const ButtonPage: React.FC = () => {
         behaves
       </ParagraphText>
 
-      <Button colorScheme={scheme}>ACCEPT</Button>
-      <Button colorScheme={scheme}>READ MORE</Button>
-      <Button colorScheme={scheme}>DELETE</Button>
-      <Button colorScheme={scheme}>DISABLED</Button>
+      <div className="ml-7 mt-10 flex flex-row gap-8">
+        <Button colorScheme={scheme} className="rounded-full">
+          ACCEPT
+        </Button>
+        <Button
+          colorScheme={scheme}
+          className="
+          rounded-full"
+        >
+          READ MORE
+        </Button>
+        <Button colorScheme={scheme} className="rounded-full">
+          DELETE
+        </Button>
+        <Button
+          colorScheme={scheme}
+          className="
+          rounded-full"
+        >
+          DISABLED
+        </Button>
+      </div>
 
       <SubsectionHeading>Code:</SubsectionHeading>
     </div>

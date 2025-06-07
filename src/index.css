@@ -36,6 +36,10 @@
     --color-button-text: #2F3E3E; /*deepPine*/
     --color-button-text-on-dark: #FFFFFF; /*white*/
 
+    /*button delete background*/
+
+    --color-button-delete: #FFFFFF; /*white*/
+
     /*active state stroke*/
 
     --color-button-active-stroke: #696969; /*ironGray*/
@@ -49,24 +53,24 @@
    --color-button-danger-active: #C88282; /*vintageRose*/
 
    --color-button-danger-stroke: #D6BABA; /*mauveDust*/
-   --color-button-warning-delete-stroke: #E2C3C3; /*dustyRose*/
+   --color-button-danger-delete-stroke: #E2C3C3; /*dustyRose*/
    --color-button-danger-disabled-stroke: #E5C7C7; /*blushBeige*/
-   --color-button-danger-focus-stroke: #B86464; /*crimsonClay*/
+   --color-button-danger-focus-outline: #CC8787; /*blushCinder*/
 
    --color-button-danger-disabled-text: #A68A8A; /*antiqueRose*/
 
     /*success*/
 
-   --color-button-success-primary: #A8D5C4; /*pastelMint*/
-   --color-button-success-secondary: #DBF2EC; /*seaFoam*/
+   --color-button-success-primary: #D8ECCF; /*pastelMint*/
+   --color-button-success-secondary: #F1FFEB; /*seaFoam*/
    --color-button-success-disabled: #D6E6DE; /*mistyMint*/
-   --color-button-success-hover: #D8ECCF; /*mintCream*/
+   --color-button-success-hover: #A8D5C4; /*mintCream*/
    --color-button-success-active: #78B5A1; /*mossTeal*/
 
    --color-button-success-stroke: #2F3E3E; /*deepPine*/
-   --color-button-warning-delete-stroke: #A8D5C4; /*pastelMint*/
+   --color-button-success-delete-stroke: #A8D5C4; /*pastelMint*/
    --color-button-success-disabled-stroke: #7D9B91; /*fadedPine*/
-   --color-button-success-focus-stroke: #5FA99B; /*tealLeaf*/
+   --color-button-success-focus-outline: #5FA99B; /*tealLeaf*/
 
    --color-button-success-disabled-text: #7D9B91; /*fadedPine*/
     
@@ -81,7 +85,7 @@
     --color-button-warning-stroke: #A19F92; /*fadedStone*/
     --color-button-warning-delete-stroke: #E3D996; /*honeyDust*/
     --color-button-warning-disabled-stroke: #E2D6B4; /*oatBeige*/
-    --color-button-warning-focus-stroke: #BFA73F; /*harvestGold*/
+    --color-button-warning-focus-outline: #BFA73F; /*harvestGold*/
 
     --color-button-warning-disabled-text: #A09060; /*rusticOlive*/
 
@@ -90,30 +94,30 @@
     --color-button-info-primary: #AFDEE3; /*frostedAqua*/
     --color-button-info-secondary: #E4F6F8; /*iceMist*/
     --color-button-info-disabled: #E3EFF4; /*paleSky*/
-    --color-button-info-hover: #588389; /*stormTeal*/
-    --color-button-info-active: #48BDC3; /*aquaStone*/
+    --color-button-info-hover: #97CCD2; /*iceBlue*/
+    --color-button-info-active: #71ACB3; /*stormTeal*/
     
     --color-button-info-stroke: #8C8C8C; /*softGraphite*/
     --color-button-info-delete-stroke: #AFDEE3; /*frostedAqua*/
     --color-button-info-disabled-stroke: #D3E3EA; /*cloudyBlue*/
-    --color-button-info-focus-stroke: #569AB7; /*coolLagoon*/
+    --color-button-info-focus-outline: #569AB7; /*coolLagoon*/
     
     --color-button-info-disabled-text: #92AAB2; /*dustyIce*/
 
     /*muted*/
     
-    --color-button-info-primary: #C0B0EE; /*dreamLilac*/
-    --color-button-info-secondary: #F3EFFF; /*lavenderFog*/
-    --color-button-info-disabled: #EEE7F4; /*palePlum*/
-    --color-button-info-hover: #685C89; /*violetCoal*/
-    --color-button-info-active: #B49AD7; /*fadedIris*/
+    --color-button-muted-primary: #C0B0EE; /*dreamLilac*/
+    --color-button-muted-secondary: #F3EFFF; /*lavenderFog*/
+    --color-button-muted-disabled: #EEE7F4; /*palePlum*/
+    --color-button-muted-hover: #D0BDF0; /*lavenderDrift*/
+    --color-button-muted-active: #A48CCB; /*irisSmoke*/
     
-    --color-button-info-stroke: #C7B3DF; /*powderLilac*/
-    --color-button-info-delete-stroke: #C0B0EE; /*dreamLilac*/
-    --color-button-info-disabled-stroke: #D6CCE6; /*hazyLavender*/
-    --color-button-info-focus-stroke: #9672BE; /*orchidMist*/
+    --color-button-muted-stroke: #C7B3DF; /*powderLilac*/
+    --color-button-muted-delete-stroke: #C0B0EE; /*dreamLilac*/
+    --color-button-muted-disabled-stroke: #D6CCE6; /*hazyLavender*/
+    --color-button-muted-focus-outline: #9672BE; /*orchidMist*/
     
-    --color-button-info-disabled-text: #9B8FA9; /*softAmethyst*/
+    --color-button-muted-disabled-text: #9B8FA9; /*softAmethyst*/
 
   
 

@@ -1,5 +1,7 @@
 interface ColorSchemePickerProps {
-  onSelect: (scheme: string) => void;
+  onSelect: (
+    scheme: "danger" | "success" | "warning" | "muted" | "info"
+  ) => void;
 }
 
 const ColorSchemePicker: React.FC<ColorSchemePickerProps> = ({ onSelect }) => {
