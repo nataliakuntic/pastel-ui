@@ -1,6 +1,6 @@
 interface ColorSchemePickerProps {
   onSelect: (
-    scheme: "danger" | "success" | "warning" | "muted" | "info"
+    scheme: "danger" | "success" | "warning" | "info" | "muted"
   ) => void;
 }
 
