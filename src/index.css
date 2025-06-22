@@ -13,20 +13,20 @@
 
     /* MAIN COLORS: COLOR SCHEME PICKER */
 
-    --color-success: #D8ECCF; /*mintCream*/
-    --color-warning: #E3D996; /*honeyDust*/
-    --color-danger: #E2C3C3; /*dustyRose*/
-    --color-info: #AFDEE3; /*frostedAqua*/
-    --color-muted: #C0B0EE; /*dreamLilac*/
+    --color-dustyrose: #E2C3C3;
+    --color-pistacchio: #D8ECCF; 
+    --color-honey: #E3D996; 
+    --color-aquafrost: #AFDEE3; 
+    --color-lilac: #C0B0EE; 
 
     /* COLOR ACCORDION EXPANDABLE PANELS */
 
     --color-default-dark: #F9FAFB; /*systemVeil*/
-    --color-success-light: #FCFFFC; /*mintVeil*/
-    --color-warning-light: #FFFEF7; /*creamVeil*/
-    --color-danger-light: #FFFAFA; /*petalVeil*/
-    --color-info-light: #FAFFFF; /*frostVeil*/
-    --color-muted-light: #F7F5FF; /*lavenderVeil*/
+    --color-pistacchio-light: #FCFFFC; /*mintVeil*/
+    --color-honey-light: #FFFEF7; /*creamVeil*/
+    --color-dustyrose-light: #FFFAFA; /*petalVeil*/
+    --color-aquafrost-light: #FAFFFF; /*frostVeil*/
+    --color-lilac-light: #F7F5FF; /*lavenderVeil*/
 
 
     /* COLOR BUTTON STATES */
@@ -44,80 +44,80 @@
 
     --color-button-active-stroke: #696969; /*ironGray*/
 
-    /*danger*/
+    /*dustyrose*/
 
-   --color-button-danger-primary: #E2C3C3; /*dustyRose*/
-   --color-button-danger-secondary: #F7F1F1; /*pinkSnow*/
-   --color-button-danger-disabled: #F1DDDD; /*blushCloud*/
-   --color-button-danger-hover: #D89A9A; /*rosePetal*/
-   --color-button-danger-active: #C88282; /*vintageRose*/
+   --color-button-dustyrose-primary: #E2C3C3; /*dustyRose*/
+   --color-button-dustyrose-secondary: #F7F1F1; /*pinkSnow*/
+   --color-button-dustyrose-disabled: #F1DDDD; /*blushCloud*/
+   --color-button-dustyrose-hover: #D89A9A; /*rosePetal*/
+   --color-button-dustyrose-active: #C88282; /*vintageRose*/
 
-   --color-button-danger-stroke: #D6BABA; /*mauveDust*/
-   --color-button-danger-delete-stroke: #E2C3C3; /*dustyRose*/
-   --color-button-danger-disabled-stroke: #E5C7C7; /*blushBeige*/
-   --color-button-danger-focus-outline: #CC8787; /*blushCinder*/
+   --color-button-dustyrose-stroke: #D6BABA; /*mauveDust*/
+   --color-button-dustyrose-delete-stroke: #E2C3C3; /*dustyRose*/
+   --color-button-dustyrose-disabled-stroke: #E5C7C7; /*blushBeige*/
+   --color-button-dustyrose-focus-outline: #CC8787; /*blushCinder*/
 
-   --color-button-danger-disabled-text: #A68A8A; /*antiqueRose*/
+   --color-button-dustyrose-disabled-text: #A68A8A; /*antiqueRose*/
 
-    /*success*/
+    /*pistacchio*/
 
-   --color-button-success-primary: #D8ECCF; /*pastelMint*/
-   --color-button-success-secondary: #F1FFEB; /*seaFoam*/
-   --color-button-success-disabled: #D6E6DE; /*mistyMint*/
-   --color-button-success-hover: #A8D5C4; /*mintCream*/
-   --color-button-success-active: #78B5A1; /*mossTeal*/
+   --color-button-pistacchio-primary: #D8ECCF; /*pastelMint*/
+   --color-button-pistacchio-secondary: #F1FFEB; /*seaFoam*/
+   --color-button-pistacchio-disabled: #D6E6DE; /*mistyMint*/
+   --color-button-pistacchio-hover: #A8D5C4; /*mintCream*/
+   --color-button-pistacchio-active: #78B5A1; /*mossTeal*/
 
-   --color-button-success-stroke: #2F3E3E; /*deepPine*/
-   --color-button-success-delete-stroke: #A8D5C4; /*pastelMint*/
-   --color-button-success-disabled-stroke: #7D9B91; /*fadedPine*/
-   --color-button-success-focus-outline: #5FA99B; /*tealLeaf*/
+   --color-button-pistacchio-stroke: #2F3E3E; /*deepPine*/
+   --color-button-pistacchio-delete-stroke: #A8D5C4; /*pastelMint*/
+   --color-button-pistacchio-disabled-stroke: #7D9B91; /*fadedPine*/
+   --color-button-pistacchio-focus-outline: #5FA99B; /*tealLeaf*/
 
-   --color-button-success-disabled-text: #7D9B91; /*fadedPine*/
+   --color-button-pistacchio-disabled-text: #7D9B91; /*fadedPine*/
     
-    /*warning*/
+    /*honey*/
 
-    --color-button-warning-primary: #E3D996; /*honeyDust*/
-    --color-button-warning-secondary: #FFF9D5; /*paleSun*/
-    --color-button-warning-disabled: #F8F3DB; /*ivoryMist*/
-    --color-button-warning-hover: #EBD47C; /*butterGold*/
-    --color-button-warning-active: #D7BE5D; /*amberGrain*/
+    --color-button-honey-primary: #E3D996; /*honeyDust*/
+    --color-button-honey-secondary: #FFF9D5; /*paleSun*/
+    --color-button-honey-disabled: #F8F3DB; /*ivoryMist*/
+    --color-button-honey-hover: #EBD47C; /*butterGold*/
+    --color-button-honey-active: #D7BE5D; /*amberGrain*/
 
-    --color-button-warning-stroke: #A19F92; /*fadedStone*/
-    --color-button-warning-delete-stroke: #E3D996; /*honeyDust*/
-    --color-button-warning-disabled-stroke: #E2D6B4; /*oatBeige*/
-    --color-button-warning-focus-outline: #BFA73F; /*harvestGold*/
+    --color-button-honey-stroke: #A19F92; /*fadedStone*/
+    --color-button-honey-delete-stroke: #E3D996; /*honeyDust*/
+    --color-button-honey-disabled-stroke: #E2D6B4; /*oatBeige*/
+    --color-button-honey-focus-outline: #BFA73F; /*harvestGold*/
 
-    --color-button-warning-disabled-text: #A09060; /*rusticOlive*/
+    --color-button-honey-disabled-text: #A09060; /*rusticOlive*/
 
-    /*info*/
+    /*aquafrost*/
     
-    --color-button-info-primary: #AFDEE3; /*frostedAqua*/
-    --color-button-info-secondary: #E4F6F8; /*iceMist*/
-    --color-button-info-disabled: #E3EFF4; /*paleSky*/
-    --color-button-info-hover: #97CCD2; /*iceBlue*/
-    --color-button-info-active: #71ACB3; /*stormTeal*/
+    --color-button-aquafrost-primary: #AFDEE3; 
+    --color-button-aquafrost-secondary: #E4F6F8; /*iceMist*/
+    --color-button-aquafrost-disabled: #E3EFF4; /*paleSky*/
+    --color-button-aquafrost-hover: #97CCD2; /*iceBlue*/
+    --color-button-aquafrost-active: #71ACB3; /*stormTeal*/
     
-    --color-button-info-stroke: #8C8C8C; /*softGraphite*/
-    --color-button-info-delete-stroke: #AFDEE3; /*frostedAqua*/
-    --color-button-info-disabled-stroke: #D3E3EA; /*cloudyBlue*/
-    --color-button-info-focus-outline: #569AB7; /*coolLagoon*/
+    --color-button-aquafrost-stroke: #8C8C8C; /*softGraphite*/
+    --color-button-aquafrost-delete-stroke: #AFDEE3; /*frostedAqua*/
+    --color-button-aquafrost-disabled-stroke: #D3E3EA; /*cloudyBlue*/
+    --color-button-aquafrost-focus-outline: #569AB7; /*coolLagoon*/
     
-    --color-button-info-disabled-text: #92AAB2; /*dustyIce*/
+    --color-button-aquafrost-disabled-text: #92AAB2; /*dustyIce*/
 
-    /*muted*/
+    /*lilac*/
     
-    --color-button-muted-primary: #C0B0EE; /*dreamLilac*/
-    --color-button-muted-secondary: #F3EFFF; /*lavenderFog*/
-    --color-button-muted-disabled: #EEE7F4; /*palePlum*/
-    --color-button-muted-hover: #D0BDF0; /*lavenderDrift*/
-    --color-button-muted-active: #A48CCB; /*irisSmoke*/
+    --color-button-lilac-primary: #C0B0EE; 
+    --color-button-lilac-secondary: #F3EFFF; /*lavenderFog*/
+    --color-button-lilac-disabled: #EEE7F4; /*palePlum*/
+    --color-button-lilac-hover: #D0BDF0; /*lavenderDrift*/
+    --color-button-lilac-active: #A48CCB; /*irisSmoke*/
     
-    --color-button-muted-stroke: #C7B3DF; /*powderLilac*/
-    --color-button-muted-delete-stroke: #C0B0EE; /*dreamLilac*/
-    --color-button-muted-disabled-stroke: #D6CCE6; /*hazyLavender*/
-    --color-button-muted-focus-outline: #9672BE; /*orchidMist*/
+    --color-button-lilac-stroke: #C7B3DF; /*powderLilac*/
+    --color-button-lilac-delete-stroke: #C0B0EE; /*dreamLilac*/
+    --color-button-lilac-disabled-stroke: #D6CCE6; /*hazyLavender*/
+    --color-button-lilac-focus-outline: #9672BE; /*orchidMist*/
     
-    --color-button-muted-disabled-text: #9B8FA9; /*softAmethyst*/
+    --color-button-lilac-disabled-text: #9B8FA9; /*softAmethyst*/
 
   
 

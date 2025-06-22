@@ -10,8 +10,8 @@ import { useState } from "react";
 
 const ButtonPage: React.FC = () => {
   const [scheme, setScheme] = useState<
-    "danger" | "success" | "warning" | "info" | "muted"
-  >("danger");
+    "dustyrose" | "pistacchio" | "honey" | "aquafrost" | "lilac"
+  >("dustyrose");
 
   return (
     <div>

@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { ButtonThemes, getClassesForVariant } from "./buttonThemes";
 
 interface ButtonProps {
-  colorScheme: "danger" | "success" | "warning" | "info" | "muted";
+  colorScheme: "dustyrose" | "pistacchio" | "honey" | "aquafrost" | "lilac";
   variant?: "primary" | "secondary" | "danger";
   disabled?: boolean;
   onClick?: () => void;

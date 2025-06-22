@@ -24,30 +24,30 @@ const colorSchemes: Record<string, AccordionColorScheme> = {
     contentBg: "bg-default",
     border: "border-primary",
   },
-  danger: {
-    labelBg: "bg-danger",
-    contentBg: "bg-danger-light",
-    border: "border-danger border-2",
+  dustyrose: {
+    labelBg: "bg-dustyrose",
+    contentBg: "bg-dustyrose-light",
+    border: "border-dustyrose border-2",
   },
-  success: {
-    labelBg: "bg-success",
-    contentBg: "bg-success-light",
-    border: "border-success border-2",
+  pistacchio: {
+    labelBg: "bg-pistacchio",
+    contentBg: "bg-pistacchio-light",
+    border: "border-pistacchio border-2",
   },
-  warning: {
-    labelBg: "bg-warning",
-    contentBg: "bg-warning-light",
-    border: "border-warning border-2",
+  honey: {
+    labelBg: "bg-honey",
+    contentBg: "bg-honey-light",
+    border: "border-honey border-2",
   },
-  muted: {
-    labelBg: "bg-muted",
-    contentBg: "bg-muted-light",
-    border: "border-muted border-2",
+  aquafrost: {
+    labelBg: "bg-aquafrost",
+    contentBg: "bg-aquafrost-light",
+    border: "border-aquafrost border-2",
   },
-  info: {
-    labelBg: "bg-info",
-    contentBg: "bg-info-light",
-    border: "border-info border-2",
+  lilac: {
+    labelBg: "bg-lilac",
+    contentBg: "bg-lilac-light",
+    border: "border-lilac border-2",
   },
 };
 const Accordion: React.FC<AccordionProps> = ({

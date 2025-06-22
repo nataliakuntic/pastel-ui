@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
     <div>
       <h1>HomePage</h1>
 
-      <p className="text-muted">Text</p>
+      <p className="text-lilac">Text</p>
 
       <ComponentBreadcrumb>Components/ Accordion</ComponentBreadcrumb>
       <ComponentHeading>Accordion</ComponentHeading>
