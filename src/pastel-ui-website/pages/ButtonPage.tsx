@@ -7,11 +7,10 @@ import ParagraphText from "./partials/ParagraphText";
 import SubsectionHeading from "./partials/SubsectionHeading";
 import ColorSchemePicker from "./partials/ColorSchemePicker";
 import { useState } from "react";
+import { ThemeName } from "../../pastel-ui-library/types";
 
 const ButtonPage: React.FC = () => {
-  const [scheme, setScheme] = useState<
-    "dustyrose" | "pistacchio" | "honey" | "aquafrost" | "lilac"
-  >("dustyrose");
+  const [scheme, setScheme] = useState<ThemeName>("dustyrose");
 
   return (
     <div>
@@ -45,7 +44,7 @@ const ButtonPage: React.FC = () => {
         <Button variant="danger" colorScheme={scheme}>
           DELETE
         </Button>
-        <Button variant="primary" colorScheme={scheme} disabled>
+        <Button variant="primary" colorScheme={scheme} isDisabled>
           DISABLED
         </Button>
       </div>
@@ -61,16 +60,16 @@ const ButtonPage: React.FC = () => {
       </ParagraphText>
 
       <div className="ml-7 mt-10 flex flex-row gap-8">
-        <Button variant="primary" colorScheme={scheme} rounded>
+        <Button variant="primary" colorScheme={scheme} isRounded>
           ACCEPT
         </Button>
-        <Button variant="secondary" colorScheme={scheme} rounded>
+        <Button variant="secondary" colorScheme={scheme} isRounded>
           READ MORE
         </Button>
-        <Button variant="danger" colorScheme={scheme} rounded>
+        <Button variant="danger" colorScheme={scheme} isRounded>
           DELETE
         </Button>
-        <Button variant="primary" colorScheme={scheme} disabled rounded>
+        <Button variant="primary" colorScheme={scheme} isDisabled isRounded>
           DISABLED
         </Button>
       </div>
