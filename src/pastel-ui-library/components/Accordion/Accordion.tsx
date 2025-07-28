@@ -1,62 +1,27 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronLeft } from "react-icons/fa";
+import { AccordionThemeName, getAccordionThemeStyle } from "./accordionThemes";
+
+export interface AccordionItem {
+  id: string;
+  label: string;
+  content: string;
+}
 
 interface AccordionProps {
-  items: {
-    id: string;
-    label: string;
-    content: string;
-  }[];
+  items: AccordionItem[];
   multiple?: boolean;
   roundedPanels?: boolean;
-  colorScheme?: string;
+  colorScheme?: AccordionThemeName;
 }
 
-interface AccordionColorScheme {
-  labelBg: string;
-  contentBg: string;
-  border: string;
-}
-
-const colorSchemes: Record<string, AccordionColorScheme> = {
-  default: {
-    labelBg: "bg-default-dark",
-    contentBg: "bg-default",
-    border: "border-primary",
-  },
-  dustyrose: {
-    labelBg: "bg-dustyrose",
-    contentBg: "bg-dustyrose-light",
-    border: "border-dustyrose border-2",
-  },
-  pistacchio: {
-    labelBg: "bg-pistacchio",
-    contentBg: "bg-pistacchio-light",
-    border: "border-pistacchio border-2",
-  },
-  honey: {
-    labelBg: "bg-honey",
-    contentBg: "bg-honey-light",
-    border: "border-honey border-2",
-  },
-  aquafrost: {
-    labelBg: "bg-aquafrost",
-    contentBg: "bg-aquafrost-light",
-    border: "border-aquafrost border-2",
-  },
-  lilac: {
-    labelBg: "bg-lilac",
-    contentBg: "bg-lilac-light",
-    border: "border-lilac border-2",
-  },
-};
 const Accordion: React.FC<AccordionProps> = ({
   items,
   multiple = false,
   roundedPanels = false,
   colorScheme,
 }) => {
-  const scheme = colorSchemes[colorScheme || "default"];
+  const scheme = getAccordionThemeStyle(colorScheme || "default");
 
   const [expandedIndex, setExpandedIndex] = useState<number>(-1);
   const [expandedIndexes, setExpandedIndexes] = useState<number[]>([]);
