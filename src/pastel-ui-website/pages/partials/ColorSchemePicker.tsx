@@ -12,8 +12,8 @@ const ColorSchemePicker: React.FC<ColorSchemePickerProps> = ({ onSelect }) => {
         onClick={() => onSelect("dustyrose")}
       />
       <button
-        className="w-7 h-7 rounded-full bg-pistacchio cursor-pointer"
-        onClick={() => onSelect("pistacchio")}
+        className="w-7 h-7 rounded-full bg-pistachio cursor-pointer"
+        onClick={() => onSelect("pistachio")}
       />
       <button
         className="w-7 h-7 rounded-full bg-honey cursor-pointer"

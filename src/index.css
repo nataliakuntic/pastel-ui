@@ -14,7 +14,7 @@
     /* MAIN COLORS: COLOR SCHEME PICKER */
 
     --color-dustyrose: #E2C3C3;
-    --color-pistacchio: #D8ECCF; 
+    --color-pistachio: #D8ECCF; 
     --color-honey: #E3D996; 
     --color-aquafrost: #AFDEE3; 
     --color-lilac: #C0B0EE; 
@@ -22,7 +22,7 @@
     /* COLOR ACCORDION EXPANDABLE PANELS */
 
     --color-default-dark: #F9FAFB; /*systemVeil*/
-    --color-pistacchio-light: #FCFFFC; /*mintVeil*/
+    --color-pistachio-light: #FCFFFC; /*mintVeil*/
     --color-honey-light: #FFFEF7; /*creamVeil*/
     --color-dustyrose-light: #FFFAFA; /*petalVeil*/
     --color-aquafrost-light: #FAFFFF; /*frostVeil*/
@@ -59,20 +59,20 @@
 
    --color-button-dustyrose-disabled-text: #A68A8A; /*antiqueRose*/
 
-    /*pistacchio*/
+    /*pistachio*/
 
-   --color-button-pistacchio-primary: #D8ECCF; /*pastelMint*/
-   --color-button-pistacchio-secondary: #F1FFEB; /*seaFoam*/
-   --color-button-pistacchio-disabled: #D6E6DE; /*mistyMint*/
-   --color-button-pistacchio-hover: #A8D5C4; /*mintCream*/
-   --color-button-pistacchio-active: #78B5A1; /*mossTeal*/
+   --color-button-pistachio-primary: #D8ECCF; /*pistachio*/
+   --color-button-pistachio-secondary: #F1FFEB; /*seaFoam*/
+   --color-button-pistachio-disabled: #D6E6DE; /*mistyMint*/
+   --color-button-pistachio-hover: #A8D5C4; /*mintCream*/
+   --color-button-pistachio-active: #78B5A1; /*mossTeal*/
 
-   --color-button-pistacchio-stroke: #2F3E3E; /*deepPine*/
-   --color-button-pistacchio-danger-stroke: #A8D5C4; /*pastelMint*/
-   --color-button-pistacchio-disabled-stroke: #7D9B91; /*fadedPine*/
-   --color-button-pistacchio-focus-outline: #5FA99B; /*tealLeaf*/
+   --color-button-pistachio-stroke: #2F3E3E; /*deepPine*/
+   --color-button-pistachio-danger-stroke: #A8D5C4; /*pistachio*/
+   --color-button-pistachio-disabled-stroke: #7D9B91; /*fadedPine*/
+   --color-button-pistachio-focus-outline: #5FA99B; /*tealLeaf*/
 
-   --color-button-pistacchio-disabled-text: #7D9B91; /*fadedPine*/
+   --color-button-pistachio-disabled-text: #7D9B91; /*fadedPine*/
     
     /*honey*/
 
