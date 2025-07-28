@@ -1,7 +1,7 @@
+import { ThemeName } from "../../../pastel-ui-library/types";
+
 interface ColorSchemePickerProps {
-  onSelect: (
-    scheme: "dustyrose" | "pistacchio" | "honey" | "aquafrost" | "lilac"
-  ) => void;
+  onSelect: (scheme: ThemeName) => void;
 }
 
 const ColorSchemePicker: React.FC<ColorSchemePickerProps> = ({ onSelect }) => {

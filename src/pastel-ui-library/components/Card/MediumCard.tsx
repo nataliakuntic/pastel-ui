@@ -1,8 +1,9 @@
 import { useState } from "react";
-import cardThemes from "./cardThemes";
+import { ThemeName } from "../../types";
+import { getCardThemeStyle } from "./cardThemes";
 
 interface MediumCardProps {
-  colorScheme: "dustyrose" | "pistachio" | "honey" | "aquafrost" | "lilac";
+  colorScheme: ThemeName;
   title: string | number | React.ReactNode;
   subtitle: string | number | React.ReactNode;
   description: string | number | React.ReactNode;
@@ -20,7 +21,7 @@ const MediumCard: React.FC<MediumCardProps> = ({
   hasContainer,
   expandedDetails,
 }) => {
-  const theme = cardThemes[colorScheme].variants.medium;
+  const theme = getCardThemeStyle(colorScheme).variants.medium;
 
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
@@ -31,10 +32,14 @@ const MediumCard: React.FC<MediumCardProps> = ({
   const content = (
     <>
       <div className="bg-white shadow-md p-6 text-left space-y-3">
-        <div className={`${cardThemes[colorScheme].title}`}>{title}</div>
-        <div className={`${cardThemes[colorScheme].subtitle}`}>{subtitle}</div>
+        <div className={`${getCardThemeStyle(colorScheme).title}`}>{title}</div>
+        <div className={`${getCardThemeStyle(colorScheme).subtitle}`}>
+          {subtitle}
+        </div>
         <div
-          className={`${cardThemes[colorScheme].variants.medium.description}`}
+          className={`${
+            getCardThemeStyle(colorScheme).variants.large.description
+          }`}
         >
           {description}
         </div>

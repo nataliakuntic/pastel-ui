@@ -1,8 +1,9 @@
 import { useState } from "react";
-import cardThemes from "./cardThemes";
+import { ThemeName } from "../../types";
+import { getCardThemeStyle } from "./cardThemes";
 
 export interface LargeCardProps {
-  colorScheme: "dustyrose" | "pistachio" | "honey" | "aquafrost" | "lilac";
+  colorScheme: ThemeName;
   title: string | number | React.ReactNode;
   subtitle: string | number | React.ReactNode;
   description: string | number | React.ReactNode;
@@ -24,7 +25,7 @@ const LargeCard: React.FC<LargeCardProps> = ({
   hasContainer,
   expandedDetails,
 }) => {
-  const theme = cardThemes[colorScheme].variants.large;
+  const theme = getCardThemeStyle(colorScheme).variants.large;
 
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
@@ -36,14 +37,18 @@ const LargeCard: React.FC<LargeCardProps> = ({
     <>
       <div className="bg-white shadow-md p-1.5 text-left">
         <img src={img} alt={alt} className="w-full h-auto" />
-        <div className={`${cardThemes[colorScheme].title} pt-2.5 pl-3.5`}>
+        <div
+          className={`${getCardThemeStyle(colorScheme).title} pt-2.5 pl-3.5`}
+        >
           {title}
         </div>
-        <div className={`${cardThemes[colorScheme].subtitle} pl-3.5`}>
+        <div className={`${getCardThemeStyle(colorScheme).subtitle} pl-3.5`}>
           {subtitle}
         </div>
         <div
-          className={`${cardThemes[colorScheme].variants.large.description} p-3.5`}
+          className={`${
+            getCardThemeStyle(colorScheme).variants.large.description
+          } p-3.5`}
         >
           {description}
         </div>
