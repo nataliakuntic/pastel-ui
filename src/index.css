@@ -76,14 +76,14 @@
     
     /*honey*/
 
-    --color-button-honey-primary: #E3D996; /*honeyDust*/
+    --color-button-honey-primary: #E3D996; /*honey*/
     --color-button-honey-secondary: #FFF9D5; /*paleSun*/
     --color-button-honey-disabled: #F8F3DB; /*ivoryMist*/
     --color-button-honey-hover: #EBD47C; /*butterGold*/
     --color-button-honey-active: #D7BE5D; /*amberGrain*/
 
     --color-button-honey-stroke: #A19F92; /*fadedStone*/
-    --color-button-honey-danger-stroke: #E3D996; /*honeyDust*/
+    --color-button-honey-danger-stroke: #E3D996; /*honey*/
     --color-button-honey-disabled-stroke: #E2D6B4; /*oatBeige*/
     --color-button-honey-focus-outline: #BFA73F; /*harvestGold*/
 
@@ -91,14 +91,14 @@
 
     /*aquafrost*/
     
-    --color-button-aquafrost-primary: #AFDEE3; 
+    --color-button-aquafrost-primary: #AFDEE3; /*aquafrost*/
     --color-button-aquafrost-secondary: #E4F6F8; /*iceMist*/
     --color-button-aquafrost-disabled: #E3EFF4; /*paleSky*/
     --color-button-aquafrost-hover: #97CCD2; /*iceBlue*/
     --color-button-aquafrost-active: #71ACB3; /*stormTeal*/
     
     --color-button-aquafrost-stroke: #8C8C8C; /*softGraphite*/
-    --color-button-aquafrost-danger-stroke: #AFDEE3; /*frostedAqua*/
+    --color-button-aquafrost-danger-stroke: #AFDEE3; /*aquafrost*/
     --color-button-aquafrost-disabled-stroke: #D3E3EA; /*cloudyBlue*/
     --color-button-aquafrost-focus-outline: #569AB7; /*coolLagoon*/
     
@@ -106,14 +106,14 @@
 
     /*lilac*/
     
-    --color-button-lilac-primary: #C0B0EE; 
+    --color-button-lilac-primary: #C0B0EE; /*lilac*/
     --color-button-lilac-secondary: #F3EFFF; /*lavenderFog*/
     --color-button-lilac-disabled: #EEE7F4; /*palePlum*/
     --color-button-lilac-hover: #D0BDF0; /*lavenderDrift*/
     --color-button-lilac-active: #A48CCB; /*irisSmoke*/
     
     --color-button-lilac-stroke: #C7B3DF; /*powderLilac*/
-    --color-button-lilac-danger-stroke: #C0B0EE; /*dreamLilac*/
+    --color-button-lilac-danger-stroke: #C0B0EE; /*lilac*/
     --color-button-lilac-disabled-stroke: #D6CCE6; /*hazyLavender*/
     --color-button-lilac-focus-outline: #9672BE; /*orchidMist*/
     
