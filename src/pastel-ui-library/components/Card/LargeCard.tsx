@@ -1,18 +1,32 @@
 import { useState } from "react";
 import { ThemeName } from "../../types";
-import { getCardThemeStyle } from "./cardThemes";
+import { BaseCardProps } from "./types";
 
-export interface LargeCardProps {
-  colorScheme: ThemeName;
-  title: string | number | React.ReactNode;
-  subtitle: string | number | React.ReactNode;
+interface LargeCardProps extends BaseCardProps {
   description: string | number | React.ReactNode;
+  expandedDetails: string | number | React.ReactNode;
+  colorScheme: ThemeName;
   img: string;
   alt: string;
   hasContainer: boolean;
   isExpandable: boolean;
-  expandedDetails: string | number | React.ReactNode;
 }
+
+const theme = (themeName: ThemeName) => {
+  return {
+    title: "font-inter text-2xl font-bold text-title",
+    subtitle:
+      "text-subtitle tracking-wider italic font-light font-inter leading-7",
+    description: `text-description font-light font-inter leading-6`,
+    expandedDetails: `text-description font-light font-inter leading-6 pt-1 pb-3.5 px-3.5`,
+    containerClasses: `bg-${themeName} p-5`,
+    inlineButton: {
+      text: `text-sm font-inter uppercase font-semibold text-inline-button-${themeName}`,
+      hoverBg: `hover:bg-inline-button-${themeName}`,
+      hoverText: `text-sm font-inter uppercase font-semibold hover:text-inline-button-hover-text`,
+    },
+  };
+};
 
 const LargeCard: React.FC<LargeCardProps> = ({
   colorScheme,
@@ -25,7 +39,7 @@ const LargeCard: React.FC<LargeCardProps> = ({
   hasContainer,
   expandedDetails,
 }) => {
-  const theme = getCardThemeStyle(colorScheme).variants.large;
+  //EXPANDED DETAILS LOGIC
 
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
@@ -33,33 +47,27 @@ const LargeCard: React.FC<LargeCardProps> = ({
     setIsExpanded(!isExpanded);
   };
 
+  //STYLING
+
+  const styles = theme(colorScheme);
+
+  //CONTENT DISPLAY
+
   const content = (
     <>
       <div className="bg-white shadow-md p-1.5 text-left">
         <img src={img} alt={alt} className="w-full h-auto" />
-        <div
-          className={`${getCardThemeStyle(colorScheme).title} pt-2.5 pl-3.5`}
-        >
-          {title}
-        </div>
-        <div className={`${getCardThemeStyle(colorScheme).subtitle} pl-3.5`}>
-          {subtitle}
-        </div>
-        <div
-          className={`${
-            getCardThemeStyle(colorScheme).variants.large.description
-          } p-3.5`}
-        >
-          {description}
-        </div>
+        <div className={`${styles.title} pt-2.5 pl-3.5`}>{title}</div>
+        <div className={`${styles.subtitle} pl-3.5`}>{subtitle}</div>
+        <div className={`${styles.description} p-3.5`}>{description}</div>
 
-        {isExpandable && theme.inlineButton && (
+        {isExpandable && styles.inlineButton && (
           <button
             onClick={handleClick}
             className={`
-    ${theme.inlineButton?.text} 
-    ${theme.inlineButton?.hoverBg} 
-    ${theme.inlineButton?.hoverText}
+    ${styles.inlineButton?.text} 
+    ${styles.inlineButton?.hoverBg} 
+    ${styles.inlineButton?.hoverText}
     inline-block 
     hover:px-2 
     transition-duration-200 
@@ -73,7 +81,7 @@ const LargeCard: React.FC<LargeCardProps> = ({
         )}
 
         {isExpanded && expandedDetails && (
-          <div className={theme.expandedDetails + " mt-2"}>
+          <div className={styles.expandedDetails + " mt-2"}>
             {expandedDetails}
           </div>
         )}
@@ -82,7 +90,7 @@ const LargeCard: React.FC<LargeCardProps> = ({
   );
 
   return hasContainer ? (
-    <div className={`${theme.containerClasses} max-w-lg`}>{content}</div>
+    <div className={`${styles.containerClasses} max-w-lg`}>{content}</div>
   ) : (
     content
   );

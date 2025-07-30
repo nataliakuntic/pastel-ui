@@ -9,13 +9,12 @@ import ComponentVariantHeading from "./partials/ComponentVariantHeading";
 import SubsectionHeading from "./partials/SubsectionHeading";
 import ParagraphText from "./partials/ParagraphText";
 import ColorSchemePicker from "./partials/ColorSchemePicker";
-import largeCardContent from "./partials/LargeCardContent";
+import largeCardContent from "./partials/largeCardContent";
 import PeonyImg from "./partials/peony.png";
+import { ThemeName } from "../../pastel-ui-library/types";
 
 const CardPage: React.FC = () => {
-  const [scheme, setScheme] = useState<
-    "dustyrose" | "pistachio" | "honey" | "aquafrost" | "lilac"
-  >("dustyrose");
+  const [scheme, setScheme] = useState<ThemeName>("dustyrose");
 
   const { img, alt, title, subtitle, description, expandedDetails } =
     largeCardContent(scheme);
