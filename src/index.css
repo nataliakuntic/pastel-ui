@@ -1,4 +1,19 @@
 @import "tailwindcss";
+/**
+Dynamically generated Tailwind classes require safelist. This is the list of all classes that need to be "caught" by the 
+safelist filter.
+*/
+@source inline("bg-button-{dustyrose,pistachio,honey,aquafrost,lilac}-{primary,secondary,disabled}");
+@source inline("{hover:,active:}bg-button-{dustyrose,pistachio,honey,aquafrost,lilac}-{hover,active}");
+@source inline("text-button-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled-text");
+@source inline("border-button-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled-stroke");
+@source inline("border-button-{dustyrose,pistachio,honey,aquafrost,lilac}-stroke");
+@source inline("border-button-{dustyrose,pistachio,honey,aquafrost,lilac}-danger-stroke");
+@source inline("focus:ring-button-{dustyrose,pistachio,honey,aquafrost,lilac}-focus-ring");
+@source inline("bg-{dustyrose,pistachio,honey,aquafrost,lilac}-light");
+@source inline("border-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("text-inline-button-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("hover:bg-inline-button-{dustyrose,pistachio,honey,aquafrost,lilac}");
 
 @theme {
 
@@ -55,7 +70,7 @@
    --color-button-dustyrose-stroke: #D6BABA; /*mauveDust*/
    --color-button-dustyrose-danger-stroke: #E2C3C3; /*dustyRose*/
    --color-button-dustyrose-disabled-stroke: #E5C7C7; /*blushBeige*/
-   --color-button-dustyrose-focus-outline: #CC8787; /*blushCinder*/
+   --color-button-dustyrose-focus-ring: #CC8787; /*blushCinder*/
 
    --color-button-dustyrose-disabled-text: #A68A8A; /*antiqueRose*/
 
@@ -70,7 +85,7 @@
    --color-button-pistachio-stroke: #2F3E3E; /*deepPine*/
    --color-button-pistachio-danger-stroke: #A8D5C4; /*pistachio*/
    --color-button-pistachio-disabled-stroke: #7D9B91; /*fadedPine*/
-   --color-button-pistachio-focus-outline: #5FA99B; /*tealLeaf*/
+   --color-button-pistachio-focus-ring: #5FA99B; /*tealLeaf*/
 
    --color-button-pistachio-disabled-text: #7D9B91; /*fadedPine*/
     
@@ -85,7 +100,7 @@
     --color-button-honey-stroke: #A19F92; /*fadedStone*/
     --color-button-honey-danger-stroke: #E3D996; /*honey*/
     --color-button-honey-disabled-stroke: #E2D6B4; /*oatBeige*/
-    --color-button-honey-focus-outline: #BFA73F; /*harvestGold*/
+    --color-button-honey-focus-ring: #BFA73F; /*harvestGold*/
 
     --color-button-honey-disabled-text: #A09060; /*rusticOlive*/
 
@@ -100,7 +115,7 @@
     --color-button-aquafrost-stroke: #8C8C8C; /*softGraphite*/
     --color-button-aquafrost-danger-stroke: #AFDEE3; /*aquafrost*/
     --color-button-aquafrost-disabled-stroke: #D3E3EA; /*cloudyBlue*/
-    --color-button-aquafrost-focus-outline: #569AB7; /*coolLagoon*/
+    --color-button-aquafrost-focus-ring: #569AB7; /*coolLagoon*/
     
     --color-button-aquafrost-disabled-text: #92AAB2; /*dustyIce*/
 
@@ -115,7 +130,7 @@
     --color-button-lilac-stroke: #C7B3DF; /*powderLilac*/
     --color-button-lilac-danger-stroke: #C0B0EE; /*lilac*/
     --color-button-lilac-disabled-stroke: #D6CCE6; /*hazyLavender*/
-    --color-button-lilac-focus-outline: #9672BE; /*orchidMist*/
+    --color-button-lilac-focus-ring: #9672BE; /*orchidMist*/
     
     --color-button-lilac-disabled-text: #9B8FA9; /*softAmethyst*/
 

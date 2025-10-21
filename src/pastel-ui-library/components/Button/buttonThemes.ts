@@ -18,7 +18,7 @@ interface VariantStyle {
   border: string;
   borderDisabled: string;
   bgDisabled: string;
-  outlineFocus: string;
+  ringFocus: string;
 }
 
 export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
@@ -34,7 +34,7 @@ export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
         border: `border-button-${themeName}-stroke`,
         borderDisabled: `border-button-${themeName}-disabled-stroke`,
         bgDisabled: `bg-button-${themeName}-disabled`,
-        outlineFocus: `focus:outline-button-${themeName}-focus-outline`,
+        ringFocus: `focus:ring-button-${themeName}-focus-ring`,
       },
       secondary: {
         bg: `bg-button-${themeName}-secondary`,
@@ -43,7 +43,7 @@ export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
         border: `border-button-${themeName}-stroke`,
         borderDisabled: `border-button-${themeName}-disabled-stroke`,
         bgDisabled: `bg-button-${themeName}-disabled`,
-        outlineFocus: `focus:outline-button-${themeName}-focus-outline`,
+        ringFocus: `focus:ring-button-${themeName}-focus-ring`,
       },
       danger: {
         bg: `bg-button-danger`,
@@ -52,7 +52,7 @@ export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
         border: `border-button-${themeName}-danger-stroke`,
         borderDisabled: `border-button-${themeName}-disabled-stroke`,
         bgDisabled: `bg-button-${themeName}-disabled`,
-        outlineFocus: `focus:outline-button-${themeName}-focus-outline`,
+        ringFocus: `focus:ring-button-${themeName}-focus-ring`,
       },
     },
   };
