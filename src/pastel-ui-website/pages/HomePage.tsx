@@ -10,7 +10,10 @@ const HomePage: React.FC = () => {
     <div>
       <h1>HomePage</h1>
 
-      <p className="text-lilac">Text</p>
+      <p className="text-lilac">
+        This is a placeholder page for testing. It will be replaced with a
+        homepage.
+      </p>
 
       <ComponentBreadcrumb>Components/ Accordion</ComponentBreadcrumb>
       <ComponentHeading>Accordion</ComponentHeading>

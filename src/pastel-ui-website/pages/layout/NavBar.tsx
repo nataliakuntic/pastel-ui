@@ -6,6 +6,8 @@ const NavBar: React.FC = () => {
       <NavLink to="/">Home Page</NavLink>
       <NavLink to="/accordion">Accordion</NavLink>
       <NavLink to="/button">Button</NavLink>
+      <NavLink to="/card">Card</NavLink>
+      <NavLink to="/checkbox">Checkbox</NavLink>
     </div>
   );
 };

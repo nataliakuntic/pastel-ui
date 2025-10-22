@@ -5,6 +5,7 @@ const links = [
   { to: "/accordion", label: "Accordion" },
   { to: "/button", label: "Button" },
   { to: "/card", label: "Card" },
+  { to: "/checkbox", label: "Checkbox" },
   // ...other links
 ];
 

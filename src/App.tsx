@@ -4,6 +4,7 @@ import HomePage from "./pastel-ui-website/pages/HomePage";
 import AccordionPage from "./pastel-ui-website/pages/AccordionPage";
 import ButtonPage from "./pastel-ui-website/pages/ButtonPage";
 import CardPage from "./pastel-ui-website/pages/CardPage";
+import CheckboxPage from "./pastel-ui-website/pages/CheckboxPage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/card",
         element: <CardPage />,
+      },
+      {
+        path: "/checkbox",
+        element: <CheckboxPage />,
       },
     ],
   },
