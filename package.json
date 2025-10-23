@@ -13,6 +13,7 @@
     "@fontsource/roboto-mono": "^5.2.5",
     "@tailwindcss/vite": "^4.1.7",
     "classnames": "^2.5.1",
+    "lucide-react": "^0.546.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
