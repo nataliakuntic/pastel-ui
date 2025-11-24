@@ -1,54 +1,34 @@
-# React + TypeScript + Vite
+# Pastel UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pastel UI is a React UI component library meant for web applications with strong visual materials (photos, videos). The subtle color palette allows the media to shine.
 
-Currently, two official plugins are available:
+List of components it provides:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Accordion
+2. Button
+3. Card
+4. Checkbox[^1]
+5. Date and Time Picker[^2]
+6. Modal[^2]
+7. Radio Button[^2]
+8. Select[^2]
+9. Text Area[^2]
+10. Text Input[^2]
 
-## Expanding the ESLint configuration
+[^1]: In progress
+[^2]: To do
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Running the project for local development
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Prerequisites:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Node.js
+2. Git
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Steps to run the project:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone this repository (`git clone https://github.com/nataliakuntic/pastel-ui.git`) to a location on your hard drive.
+2. `cd` into the project directory.
+3. Run `npm install`.
+4. Run `npm run dev`.
+5. The project should now be running at `http://localhost:5173`
