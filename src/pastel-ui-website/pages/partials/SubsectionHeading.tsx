@@ -9,7 +9,7 @@ function SubsectionHeading({
   return (
     <h5
       {...rest}
-      className={`text-3xl mb-10 mt-10 font-bold font-stretch-expanded text-primary ${className}`}
+      className={`text-3xl mb-10 mt-10 font-bold text-primary ${className}`}
     >
       {children}
     </h5>
