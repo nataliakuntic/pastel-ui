@@ -26,6 +26,11 @@ const AccordionPage: React.FC = () => {
 
       <ComponentVariantHeading>Simple + One Panel</ComponentVariantHeading>
 
+      <ParagraphText className="mb-7">
+        <span className="font-bold">Click</span> on the{" "}
+        <span className="font-bold">panel</span> to see how it behaves.
+      </ParagraphText>
+
       <Accordion items={accordionItems} />
 
       <SubsectionHeading>Code:</SubsectionHeading>
@@ -39,9 +44,7 @@ const AccordionPage: React.FC = () => {
       <ComponentVariantHeading>Color + One Panel</ComponentVariantHeading>
 
       <ParagraphText>
-        <span className="font-bold">Hover over</span> and
-        <span className="font-bold"> click</span> on the button to see how it
-        behaves
+        <span className="font-bold">Pick</span> a color scheme.
       </ParagraphText>
 
       <ColorSchemePicker onSelect={setScheme} />

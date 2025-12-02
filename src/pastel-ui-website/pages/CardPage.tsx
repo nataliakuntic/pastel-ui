@@ -44,9 +44,7 @@ const CardPage: React.FC = () => {
       <ComponentVariantHeading>Simple Card + Container</ComponentVariantHeading>
 
       <ParagraphText>
-        <span className="font-bold">Hover over</span> and
-        <span className="font-bold"> click</span> on the button to see how it
-        behaves
+        <span className="font-bold">Pick</span> a color scheme.
       </ParagraphText>
 
       <ColorSchemePicker onSelect={setScheme} />
