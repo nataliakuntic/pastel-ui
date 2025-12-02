@@ -12,10 +12,15 @@ import { ThemeName } from "../../pastel-ui-library/types";
 const CheckboxPage: React.FC = () => {
   const [scheme, setScheme] = useState<ThemeName>("dustyrose");
 
-  const [isChecked, setIsChecked] = useState<boolean>(true);
+  const [isChecked1, setIsChecked1] = useState<boolean>(true);
+  const [isChecked2, setIsChecked2] = useState<boolean>(true);
 
-  const handleChange = (newIsChecked: boolean) => {
-    setIsChecked(newIsChecked);
+  const handleChange1 = (newIsChecked: boolean) => {
+    setIsChecked1(newIsChecked);
+  };
+
+  const handleChange2 = (newIsChecked: boolean) => {
+    setIsChecked2(newIsChecked);
   };
 
   const doNothing = () => {};
@@ -42,15 +47,15 @@ const CheckboxPage: React.FC = () => {
       <ColorSchemePicker onSelect={setScheme} />
 
       <Checkbox
-        isChecked={isChecked}
+        isChecked={isChecked1}
         label="Checkbox 1"
-        onChange={handleChange}
+        onChange={handleChange1}
       />
 
       <Checkbox
-        isChecked={isChecked}
+        isChecked={isChecked2}
         label="Checkbox 2"
-        onChange={handleChange}
+        onChange={handleChange2}
       />
 
       <Checkbox isChecked label="Disabled" isDisabled onChange={doNothing} />
