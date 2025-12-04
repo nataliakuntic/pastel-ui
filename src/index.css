@@ -80,7 +80,8 @@ safelist filter.
    --color-button-pistachio-secondary: #F1FFEB; /*seaFoam*/
    --color-button-pistachio-disabled: #D6E6DE; /*mistyMint*/
    --color-button-pistachio-hover: #A8D5C4; /*mintCream*/
-   --color-button-pistachio-active: #78B5A1; /*mossTeal*/
+   --color-button-pistachio-active: #78B5A1; 
+   
 
    --color-button-pistachio-stroke: #2F3E3E; /*deepPine*/
    --color-button-pistachio-danger-stroke: #A8D5C4; /*pistachio*/
@@ -155,6 +156,19 @@ safelist filter.
    --color-inline-button-honey: #A59B56; /*goldenOlive*/
    --color-inline-button-aquafrost: #569AB7; /*coolLagoon*/
    --color-inline-button-lilac: #8A75AC; /*lavenderMist*/
+
+    /* CHECKBOX COLORS */
+
+    --color-checked-dark-dustyrose: #B86464; /*roseWood*/
+    --color-checked-dark-pistachio: #78B5A1; /*mossTeal*/
+    --color-checked-dark-honey: #BFA73F; /*harvestGold*/
+    --color-checked-dark-aquafrost: #569AB7; /*coolLagoon*/
+    --color-checked-dark-lilac: #9672BE; /*orchidMist*/
+
+    --color-border-disabled: #D9D9D9; /*platinum*/
+    --color-background-disabled: #F5F5F5; /*whiteSmoke*/
+
+           
 
 
     /* BRAND COLORS */

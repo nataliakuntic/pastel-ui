@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+import { ThemeName } from "../../types";
+import { getCheckboxThemeStyle } from "./checkboxThemes";
 
 interface CheckboxProps {
   isChecked?: boolean;
@@ -42,7 +43,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#fff"
+        stroke="currentColor"
         stroke-width="4"
         stroke-linecap="round"
         stroke-linejoin="round"
