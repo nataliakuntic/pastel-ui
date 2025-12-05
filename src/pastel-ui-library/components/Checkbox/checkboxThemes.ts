@@ -12,7 +12,8 @@ export interface CheckboxTheme {
 
 export interface CheckboxVariant {
   border: string;
-  bg: string;
+  bgUnchecked: string;
+  bgChecked: string;
   iconChecked: string;
   ringFocus: string;
 }
@@ -25,13 +26,15 @@ export const getCheckboxThemeStyle = (themeName: ThemeName): CheckboxTheme => {
     variants: {
       light: {
         border: `border-${themeName}`,
-        bg: `bg-default`,
+        bgUnchecked: `bg-default`,
+        bgChecked: `bg-default`,
         iconChecked: `text-${themeName}`,
         ringFocus: `focus:ring-button-${themeName}-focus-ring`,
       },
       dark: {
-        border: `border-${themeName}`,
-        bg: `bg-checked-dark-${themeName}`,
+        border: `border-checked-dark-${themeName}`,
+        bgUnchecked: `bg-default`,
+        bgChecked: `bg-checked-dark-${themeName}`,
         iconChecked: `text-default`,
         ringFocus: `focus:ring-button-${themeName}-focus-ring`,
       },

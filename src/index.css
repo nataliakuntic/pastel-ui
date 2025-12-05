@@ -14,6 +14,9 @@ safelist filter.
 @source inline("border-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("text-inline-button-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("hover:bg-inline-button-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("text-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("bg-checked-dark-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("border-checked-dark-{dustyrose,pistachio,honey,aquafrost,lilac}");
 
 @theme {
 

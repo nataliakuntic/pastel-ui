@@ -14,6 +14,7 @@ const CheckboxPage: React.FC = () => {
 
   const [isChecked1, setIsChecked1] = useState<boolean>(true);
   const [isChecked2, setIsChecked2] = useState<boolean>(true);
+  const [isChecked3, setIsChecked3] = useState<boolean>(true);
 
   const handleChange1 = (newIsChecked: boolean) => {
     setIsChecked1(newIsChecked);
@@ -21,6 +22,10 @@ const CheckboxPage: React.FC = () => {
 
   const handleChange2 = (newIsChecked: boolean) => {
     setIsChecked2(newIsChecked);
+  };
+
+  const handleChange3 = (newIsChecked: boolean) => {
+    setIsChecked3(newIsChecked);
   };
 
   const doNothing = () => {};
@@ -45,26 +50,50 @@ const CheckboxPage: React.FC = () => {
       <ColorSchemePicker onSelect={setScheme} />
 
       <Checkbox
+        colorScheme={scheme}
+        variant="light"
         isChecked={isChecked1}
         label="Checkbox 1"
         onChange={handleChange1}
       />
 
       <Checkbox
+        colorScheme={scheme}
+        variant="light"
         isChecked={isChecked2}
         label="Checkbox 2"
         onChange={handleChange2}
       />
 
-      <Checkbox isChecked label="Disabled" isDisabled onChange={doNothing} />
+      <Checkbox
+        colorScheme={scheme}
+        variant="light"
+        isChecked
+        label="Disabled"
+        isDisabled
+        onChange={doNothing}
+      />
 
       <SubsectionHeading>Code:</SubsectionHeading>
 
       <ComponentVariantHeading>Checkbox Dark</ComponentVariantHeading>
 
-      <Checkbox label="Selected" onChange={doNothing} />
+      <Checkbox
+        variant="dark"
+        isChecked={isChecked3}
+        colorScheme={scheme}
+        label="Selected"
+        onChange={handleChange3}
+      />
 
-      <Checkbox isChecked label="Disabled" isDisabled onChange={doNothing} />
+      <Checkbox
+        colorScheme={scheme}
+        variant="dark"
+        isChecked
+        label="Disabled"
+        isDisabled
+        onChange={doNothing}
+      />
 
       <SubsectionHeading>Code:</SubsectionHeading>
     </div>
