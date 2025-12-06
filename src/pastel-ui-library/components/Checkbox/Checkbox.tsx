@@ -1,6 +1,7 @@
 import { ThemeName } from "../../types";
 import { getCheckboxThemeStyle } from "./checkboxThemes";
 import { useId } from "react";
+import classNames from "classnames";
 
 interface CheckboxProps {
   colorScheme: ThemeName;
@@ -26,49 +27,50 @@ const Checkbox: React.FC<CheckboxProps> = ({
   const theme = getCheckboxThemeStyle(colorScheme);
   const variantStyles = theme.variants[variant];
 
+  const wrapperClass = classNames(
+    "flex gap-2 flex-grow-0",
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+  );
+
+  const checkboxClass = classNames(
+    "relative peer shrink-0",
+    "appearance-none w-4 h-4 border-2 mt-1",
+    variantStyles.border,
+    isChecked ? variantStyles.bgChecked : variantStyles.bgUnchecked,
+    "focus:outline-none focus:ring-offset-0 focus:ring-2",
+    variantStyles.ringFocus,
+    `disabled:${theme.borderDisabled}`,
+    `disabled:${theme.bgDisabled}`
+  );
+
+  const labelClass = classNames(
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+  );
+
+  const iconClass = classNames(
+    "absolute w-4 h-4 mt-1",
+    "hidden peer-checked:block",
+    "pointer-events-none",
+    isDisabled ? theme.iconCheckedDisabled : variantStyles.iconChecked
+  );
+
   return (
-    <div className={`flex`}>
-      <div
-        className={`flex gap-2 flex-grow-0 ${
-          isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
-        }`}
-      >
+    <div className="flex">
+      <div className={wrapperClass}>
         <input
           id={id}
           type="checkbox"
-          className={`
-    relative peer shrink-0
-    appearance-none w-4 h-4 border-2
-    ${variantStyles.border} ${
-            isChecked ? variantStyles.bgChecked : variantStyles.bgUnchecked
-          }
-    mt-1
-    focus:outline-none focus:ring-offset-0 focus:ring-2 ${
-      variantStyles.ringFocus
-    }
-    disabled:${theme.borderDisabled} disabled:${theme.bgDisabled}
-  `}
+          className={checkboxClass}
           checked={isChecked}
           onChange={() => onChange(!isChecked)}
           disabled={isDisabled}
           required={isRequired}
         />
-        <label
-          htmlFor={id}
-          className={`${
-            isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
-          }`}
-        >
+        <label htmlFor={id} className={labelClass}>
           {label}
         </label>
         <svg
-          className={`
-    absolute 
-    w-4 h-4 mt-1
-    hidden peer-checked:block
-    pointer-events-none
-    ${isDisabled ? theme.iconCheckedDisabled : variantStyles.iconChecked}
-  `}
+          className={iconClass}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"

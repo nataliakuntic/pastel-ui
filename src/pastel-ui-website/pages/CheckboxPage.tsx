@@ -44,7 +44,7 @@ const CheckboxPage: React.FC = () => {
       <ComponentVariantHeading>Checkbox Light</ComponentVariantHeading>
 
       <ParagraphText>
-        <span className="font-bold">Click</span> the checkbox.
+        <span className="font-bold">Click</span> on the checkbox.
       </ParagraphText>
 
       <ColorSchemePicker onSelect={setScheme} />
