@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ThemeName } from "../../types";
 import { BaseCardProps } from "./types";
+import classNames from "classnames";
 
 interface MediumCardProps extends BaseCardProps {
   description: string | number | React.ReactNode;
@@ -15,13 +16,14 @@ const theme = (themeName: ThemeName) => {
     title: "font-inter text-2xl font-bold text-title",
     subtitle:
       "text-subtitle tracking-wider italic font-light font-inter leading-7",
-    description: `text-description font-light font-inter leading-7`,
-    expandedDetails: `text-description font-light font-inter leading-7`,
+    description: "text-description font-light font-inter leading-7",
+    expandedDetails: "text-description font-light font-inter leading-7",
     containerClasses: `bg-${themeName} px-8 py-7 shadow-md`,
     inlineButton: {
       text: `text-sm uppercase font-semibold text-inline-button-${themeName}`,
       hoverBg: `hover:bg-inline-button-${themeName}`,
-      hoverText: `text-sm font-inter uppercase font-semibold hover:text-inline-button-hover-text`,
+      hoverText:
+        "text-sm font-inter uppercase font-semibold hover:text-inline-button-hover-text",
     },
   };
 };
@@ -47,28 +49,35 @@ const MediumCard: React.FC<MediumCardProps> = ({
 
   const styles = theme(colorScheme);
 
+  const inlineButtonClass = classNames(
+    "inline-block",
+    "hover:px-2",
+    "transition-duration-200",
+    "mt-2",
+    styles.inlineButton.text,
+    styles.inlineButton.hoverBg,
+    styles.inlineButton.hoverText
+  );
+
+  const contentBackground = classNames(
+    "bg-default",
+    "shadow-md",
+    "p-6",
+    "text-left",
+    "space-y-3"
+  );
+
   //CONTENT DISPLAY
 
   const content = (
     <>
-      <div className="bg-white shadow-md p-6 text-left space-y-3">
+      <div className={contentBackground}>
         <div className={`${styles.title}`}>{title}</div>
         <div className={`${styles.subtitle}`}>{subtitle}</div>
         <div className={`${styles.description}`}>{description}</div>
 
         {isExpandable && styles.inlineButton && (
-          <button
-            onClick={handleClick}
-            className={`
-    ${styles.inlineButton.text} 
-    ${styles.inlineButton.hoverBg} 
-    ${styles.inlineButton.hoverText}
-    inline-block 
-    hover:px-2 
-    transition-duration-200 
-    mt-2
-  `}
-          >
+          <button onClick={handleClick} className={inlineButtonClass}>
             {isExpanded ? "Show Less" : "Read More"}
           </button>
         )}

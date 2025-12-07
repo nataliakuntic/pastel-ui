@@ -28,19 +28,29 @@ const Checkbox: React.FC<CheckboxProps> = ({
   const variantStyles = theme.variants[variant];
 
   const wrapperClass = classNames(
-    "flex gap-2 flex-grow-0",
+    "flex",
+    "gap-2",
+    "flex-grow-0",
     isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
   );
 
   const checkboxClass = classNames(
-    "relative peer shrink-0",
-    "appearance-none w-4 h-4 border-2 mt-1",
-    variantStyles.border,
-    isChecked ? variantStyles.bgChecked : variantStyles.bgUnchecked,
-    "focus:outline-none focus:ring-offset-0 focus:ring-2",
-    variantStyles.ringFocus,
+    "relative",
+    "peer",
+    "shrink-0",
+    "appearance-none",
+    "w-4",
+    "h-4",
+    "border-2",
+    "mt-1",
+    "focus:outline-none",
+    "focus:ring-offset-0",
+    "focus:ring-2",
     `disabled:${theme.borderDisabled}`,
-    `disabled:${theme.bgDisabled}`
+    `disabled:${theme.bgDisabled}`,
+    variantStyles.border,
+    variantStyles.ringFocus,
+    isChecked ? variantStyles.bgChecked : variantStyles.bgUnchecked
   );
 
   const labelClass = classNames(
@@ -48,8 +58,12 @@ const Checkbox: React.FC<CheckboxProps> = ({
   );
 
   const iconClass = classNames(
-    "absolute w-4 h-4 mt-1",
-    "hidden peer-checked:block",
+    "absolute",
+    "w-4",
+    "h-4",
+    "mt-1",
+    "hidden",
+    "peer-checked:block",
     "pointer-events-none",
     isDisabled ? theme.iconCheckedDisabled : variantStyles.iconChecked
   );
@@ -75,9 +89,9 @@ const Checkbox: React.FC<CheckboxProps> = ({
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <polyline points="20 6 9 17 4 12"></polyline>
         </svg>

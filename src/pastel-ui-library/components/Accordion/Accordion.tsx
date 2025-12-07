@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronLeft } from "react-icons/fa";
 import { AccordionThemeName, getAccordionThemeStyle } from "./accordionThemes";
+import classNames from "classnames";
 
 export interface AccordionItem {
   id: string;
@@ -50,35 +51,34 @@ const Accordion: React.FC<AccordionProps> = ({
       </span>
     );
 
+    const panelClasses = classNames(
+      "flex",
+      "justify-between",
+      "p-3",
+      "items-center",
+      "cursor-pointer",
+      scheme.labelBg,
+      roundedPanels ? `rounded-2xl ${scheme.border} border` : "",
+      roundedPanels && isExpanded ? "border-b-0" : "",
+      !roundedPanels && (!isLast || isExpanded) ? "border-b" : ""
+    );
+
+    const expandedClasses = classNames(
+      "p-5",
+      scheme.contentBg,
+      !roundedPanels && !isLast ? "border-b" : "",
+      roundedPanels ? `rounded-2xl ${scheme.border} border` : ""
+    );
+
     return (
       <div key={item.id} className={roundedPanels ? "mb-2" : ""}>
-        <div
-          className={`${scheme.labelBg}  flex justify-between p-3 ${
-            !roundedPanels && (!isLast || isExpanded) ? "border-b" : ""
-          } items-center cursor-pointer ${
-            roundedPanels
-              ? `rounded-2xl ${scheme.border} border ${
-                  isExpanded ? "border-b-0" : ""
-                }`
-              : ""
-          }`}
-          onClick={() => handleClick(index)}
-        >
+        <div className={panelClasses} onClick={() => handleClick(index)}>
           <div className={`pl-3 text-secondary font-semibold font-inter`}>
             {item.label}
           </div>
           {icon}
         </div>
-        {isExpanded && (
-          <div
-            className={`${!roundedPanels && !isLast ? "border-b" : ""} p-5 ${
-              scheme.contentBg
-            } 
-             ${roundedPanels ? `rounded-2xl ${scheme.border} border` : ""} `}
-          >
-            {item.content}
-          </div>
-        )}
+        {isExpanded && <div className={expandedClasses}>{item.content}</div>}
       </div>
     );
   });
