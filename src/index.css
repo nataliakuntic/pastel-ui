@@ -17,6 +17,12 @@ safelist filter.
 @source inline("text-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("bg-checked-dark-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("border-checked-dark-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("text-checked-dark-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("focus:ring-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("border-checkbox-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled");
+@source inline("bg-checkbox-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled");
+@source inline("text-checkbox-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled-icon");
+
 
 @theme {
 
@@ -162,7 +168,7 @@ safelist filter.
 
     /* CHECKBOX COLORS */
 
-    --color-checked-dark-dustyrose: #B86464; /*roseWood*/
+    --color-checked-dark-dustyrose: #C68686; /*roseWood*/
     --color-checked-dark-pistachio: #78B5A1; /*mossTeal*/
     --color-checked-dark-honey: #BFA73F; /*harvestGold*/
     --color-checked-dark-aquafrost: #569AB7; /*coolLagoon*/
@@ -171,6 +177,16 @@ safelist filter.
     --color-border-disabled: #D9D9D9; /*platinum*/
     --color-background-disabled: #F5F5F5; /*whiteSmoke*/
 
+    --color-checkbox-dustyrose-disabled: #F1DDDD; /*blushCloud*/
+    --color-checkbox-dustyrose-disabled-icon: #A68A8A; /*antiqueRose*/
+    --color-checkbox-pistachio-disabled: #D6E6DE; /*mistyMint*/
+    --color-checkbox-pistachio-disabled-icon: #7D9B91; /*fadedPine*/
+    --color-checkbox-honey-disabled: #F2E3B5; /*warmLinen*/
+    --color-checkbox-honey-disabled-icon: #A09060; /*rusticOlive*/
+    --color-checkbox-aquafrost-disabled: #CFE1EA; /*cloudBlue*/
+    --color-checkbox-aquafrost-disabled-icon: #92AAB2; /*dustyIce*/
+    --color-checkbox-lilac-disabled: #E0D3EC; /*pastelPlum*/
+    --color-checkbox-lilac-disabled-icon: #9B8FA9; /*softAmethyst*/
            
 
 

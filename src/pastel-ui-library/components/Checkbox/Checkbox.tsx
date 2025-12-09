@@ -46,15 +46,11 @@ const Checkbox: React.FC<CheckboxProps> = ({
     "focus:outline-none",
     "focus:ring-offset-0",
     "focus:ring-2",
-    `disabled:${theme.borderDisabled}`,
-    `disabled:${theme.bgDisabled}`,
-    variantStyles.border,
-    variantStyles.ringFocus,
-    isChecked ? variantStyles.bgChecked : variantStyles.bgUnchecked
-  );
-
-  const labelClass = classNames(
-    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+    !isDisabled && isChecked ? variantStyles.bgChecked : "",
+    !isDisabled && !isChecked ? variantStyles.bgUnchecked : "",
+    !isDisabled && variantStyles.ringFocus,
+    isDisabled ? theme.borderDisabled : variantStyles.border,
+    isDisabled ? theme.bgDisabled : ""
   );
 
   const iconClass = classNames(
@@ -80,7 +76,12 @@ const Checkbox: React.FC<CheckboxProps> = ({
           disabled={isDisabled}
           required={isRequired}
         />
-        <label htmlFor={id} className={labelClass}>
+        <label
+          htmlFor={id}
+          className={
+            isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+          }
+        >
           {label}
         </label>
         <svg

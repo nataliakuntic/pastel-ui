@@ -20,23 +20,23 @@ export interface CheckboxVariant {
 
 export const getCheckboxThemeStyle = (themeName: ThemeName): CheckboxTheme => {
   return {
-    borderDisabled: `border-border-disabled`,
-    bgDisabled: `bg-background-disabled`,
-    iconCheckedDisabled: `text-border-disabled`,
+    borderDisabled: `border-checkbox-${themeName}-disabled`,
+    bgDisabled: `bg-checkbox-${themeName}-disabled`,
+    iconCheckedDisabled: `text-checkbox-${themeName}-disabled-icon`,
     variants: {
       light: {
-        border: `border-${themeName}`,
+        border: `border-checked-dark-${themeName}`,
         bgUnchecked: `bg-default`,
         bgChecked: `bg-default`,
-        iconChecked: `text-${themeName}`,
-        ringFocus: `focus:ring-button-${themeName}-focus-ring`,
+        iconChecked: `text-checked-dark-${themeName}`,
+        ringFocus: `focus:ring-${themeName}`,
       },
       dark: {
         border: `border-checked-dark-${themeName}`,
         bgUnchecked: `bg-default`,
         bgChecked: `bg-checked-dark-${themeName}`,
         iconChecked: `text-default`,
-        ringFocus: `focus:ring-button-${themeName}-focus-ring`,
+        ringFocus: `focus:ring-${themeName}`,
       },
     },
   };
