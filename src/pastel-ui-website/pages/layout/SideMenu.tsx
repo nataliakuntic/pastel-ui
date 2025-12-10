@@ -6,6 +6,7 @@ const links = [
   { to: "/button", label: "Button" },
   { to: "/card", label: "Card" },
   { to: "/checkbox", label: "Checkbox" },
+  { to: "/textinput", label: "Text Input" },
   // ...other links
 ];
 
