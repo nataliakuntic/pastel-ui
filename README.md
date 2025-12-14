@@ -7,13 +7,13 @@ List of components it provides:
 1. Accordion
 2. Button
 3. Card
-4. Checkbox[^1]
-5. Date and Time Picker[^2]
-6. Modal[^2]
-7. Radio Button[^2]
-8. Select[^2]
-9. Text Area[^2]
-10. Text Input[^2]
+4. Checkbox
+5. Text Input
+6. Radio Button[^1]
+7. Date and Time Picker[^2]
+8. Modal[^2]
+9. Select[^2]
+10. Text Area[^2]
 
 [^1]: In progress
 [^2]: To do
