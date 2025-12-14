@@ -47,7 +47,7 @@ const TextInputPage: React.FC = () => {
         email addresses, or phone numbers.
       </ComponentDescription>
 
-      <ComponentVariantHeading>Text + Number Input</ComponentVariantHeading>
+      <ComponentVariantHeading>Text Field Input</ComponentVariantHeading>
 
       <ParagraphText>
         <span className="font-bold">Pick</span> a color scheme.
