@@ -22,6 +22,9 @@ safelist filter.
 @source inline("border-checkbox-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled");
 @source inline("bg-checkbox-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled");
 @source inline("text-checkbox-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled-icon");
+@source inline("text-labeltext-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("bg-input-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled");
+@source inline("focus:ring-input-{dustyrose,pistachio,honey,aquafrost,lilac}-focus-ring");
 
 
 @theme {
@@ -187,7 +190,26 @@ safelist filter.
     --color-checkbox-aquafrost-disabled-icon: #92AAB2; /*dustyIce*/
     --color-checkbox-lilac-disabled: #E0D3EC; /*pastelPlum*/
     --color-checkbox-lilac-disabled-icon: #9B8FA9; /*softAmethyst*/
+
+    /* TEXT INPUT COLORS */
            
+    --color-labeltext-dustyrose: #986767; /*deepDustyrose*/
+    --color-labeltext-pistachio: #495857; /*softCharcoal*/
+    --color-labeltext-honey: #A59B56; /*goldenOlive*/
+    --color-labeltext-aquafrost: #4E6F78; /*frostySlate*/
+    --color-labeltext-lilac: #9672BE; /*orchidMist*/
+
+    --color-input-dustyrose-disabled: #F6E7E7; /*softDustyRose*/
+    --color-input-pistachio-disabled: #EDF9F0; /*paperMint*/
+    --color-input-honey-disabled: #F8F3DB; /*ivoryMist*/
+    --color-input-aquafrost-disabled: #F4F8F9; /*iceDew*/
+    --color-input-lilac-disabled: #EEE7F4; /*palePlum*/
+
+    --color-input-dustyrose-focus-ring: #CC8787; /*blushCinder*/
+    --color-input-pistachio-focus-ring: #5FA99B; /*tealLeaf*/
+    --color-input-honey-focus-ring: #BFA73F; /*harvestGold*/
+    --color-input-aquafrost-focus-ring: #4E7F8C; /*frostSteel*/
+    --color-input-lilac-focus-ring: #6D4E96; /*deepOrchid*/
 
 
     /* BRAND COLORS */

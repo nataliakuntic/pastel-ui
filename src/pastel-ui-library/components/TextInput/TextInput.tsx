@@ -1,19 +1,16 @@
 import { ThemeName } from "../../types";
+import { getTextInputThemeStyle } from "./textInputThemes";
+import { useId } from "react";
+import classNames from "classnames";
 
 interface TextInputProps {
   colorScheme: ThemeName;
   type: "text" | "number" | "email" | "password";
   label?: React.ReactNode;
-  value: string | number;
-  onChange: (value: string | number) => void;
-  isRequired?: boolean;
+  value: string | number | undefined;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   isDisabled?: boolean;
-  placeholder?: string | number;
-  name?: string;
-  id?: string;
-  helperText?: string; // "We'll never share your e-mail"
-  errorMessage?: string;
-  isInvalid?: boolean;
+  placeholder?: string;
 }
 
 const TextInput: React.FC<TextInputProps> = ({
@@ -22,23 +19,44 @@ const TextInput: React.FC<TextInputProps> = ({
   label,
   value,
   onChange,
-  isRequired,
   isDisabled,
   placeholder,
-  name,
-  id,
-  helperText,
-  errorMessage,
-  isInvalid,
 }) => {
+  const id = useId();
+
+  const theme = getTextInputThemeStyle(colorScheme);
+
+  const wrapperClass = classNames(
+    "flex",
+    "flex-col",
+    "gap-1",
+    "mb-6",
+    "max-w-xs"
+  );
+
+  const inputClass = classNames(
+    "focus:outline-none",
+    "focus:ring-offset-2",
+    "focus:ring-3",
+    !isDisabled && theme.ringFocus,
+    isDisabled ? theme.borderDisabled : theme.border,
+    isDisabled ? theme.bgDisabled : theme.background,
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+  );
+
   return (
-    <div>
+    <div className={wrapperClass}>
+      <label htmlFor={id} className={theme.labelText}>
+        {label}
+      </label>
       <input
+        id={id}
         type={type}
-        placeholder="name"
-        className="border-2 border-dustyrose"
+        placeholder={placeholder}
+        className={inputClass}
         value={value}
-        onChange={handleChange}
+        onChange={onChange}
+        disabled={isDisabled}
       />
     </div>
   );
