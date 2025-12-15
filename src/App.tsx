@@ -6,6 +6,7 @@ import ButtonPage from "./pastel-ui-website/pages/ButtonPage";
 import CardPage from "./pastel-ui-website/pages/CardPage";
 import CheckboxPage from "./pastel-ui-website/pages/CheckboxPage";
 import TextInputPage from "./pastel-ui-website/pages/TextInputPage";
+import RadiobuttonPage from "./pastel-ui-website/pages/RadiobuttonPage";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/textinput",
         element: <TextInputPage />,
+      },
+      {
+        path: "/radiobutton",
+        element: <RadiobuttonPage />,
       },
     ],
   },
