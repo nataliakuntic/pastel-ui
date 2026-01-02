@@ -1,4 +1,4 @@
-import Radiobutton from "../../pastel-ui-library/components/Radiobutton/Radiobutton";
+import Radiogroup from "../../pastel-ui-library/components/Radiobutton/Radiogroup";
 import ComponentHeading from "./partials/ComponentHeading";
 import ComponentVariantHeading from "./partials/ComponentVariantHeading";
 import ComponentBreadcrumb from "./partials/ComponentBreadcrumb";
@@ -8,9 +8,11 @@ import SubsectionHeading from "./partials/SubsectionHeading";
 import ColorSchemePicker from "./partials/ColorSchemePicker";
 import { useState } from "react";
 import { ThemeName } from "../../pastel-ui-library/types";
+import radioOptions from "./partials/radioContent";
 
 const RadiobuttonPage: React.FC = () => {
   const [scheme, setScheme] = useState<ThemeName>("dustyrose");
+  const [city, setCity] = useState<string | null>("oslo");
 
   return (
     <div>
@@ -23,7 +25,7 @@ const RadiobuttonPage: React.FC = () => {
         within a group.
       </ComponentDescription>
 
-      <ComponentVariantHeading>Simple Radio Button</ComponentVariantHeading>
+      <ComponentVariantHeading>Simple Radio Group</ComponentVariantHeading>
 
       <ParagraphText>
         <span className="font-bold">Pick</span> a color scheme.
@@ -31,7 +33,13 @@ const RadiobuttonPage: React.FC = () => {
 
       <ColorSchemePicker onSelect={setScheme} />
 
-      <Radiobutton colorScheme={scheme} />
+      <Radiogroup
+        colorScheme={scheme}
+        legend="Select your favorite city:"
+        options={radioOptions}
+        value={city}
+        onChange={setCity}
+      />
 
       <SubsectionHeading>Code:</SubsectionHeading>
     </div>
