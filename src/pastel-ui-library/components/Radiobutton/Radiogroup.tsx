@@ -28,19 +28,26 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
 
   const fieldsetClass = classNames("flex", "flex-col", "gap-3");
 
+  const legendClass = classNames("mb-4", theme.legendText);
+
   const labelClass = classNames(
-    "flex",
-    "items-start",
+    "inline-flex",
+    "items-center",
     "gap-3",
-    "cursor-pointer"
+    "cursor-pointer",
+    "select-none",
+    "group",
+    theme.labelText
   );
 
-  const wrapperClass = classNames(
-    "relative",
-    "w-4",
-    "h-4",
-    "inline-block",
-    "mt-[2px]"
+  const wrapperClass = classNames("relative", "w-4", "h-4", "inline-block");
+
+  const optionClass = classNames(
+    "leading-none",
+    "px-2",
+    "py-1",
+    "rounded-md",
+    theme.hoverBg
   );
 
   const outerCircle = classNames(
@@ -78,7 +85,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
 
   return (
     <fieldset disabled={isDisabled} className={fieldsetClass}>
-      <legend className="mb-3">{legend}</legend>
+      <legend className={legendClass}>{legend}</legend>
 
       {options.map((option) => (
         <label key={option.value} className={labelClass}>
@@ -93,7 +100,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
             <span className={innerDot} />
           </span>
 
-          <span className="leading-none">{option.label}</span>
+          <span className={optionClass}>{option.label}</span>
         </label>
       ))}
     </fieldset>

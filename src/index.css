@@ -25,7 +25,11 @@ safelist filter.
 @source inline("text-labeltext-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("bg-input-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled");
 @source inline("focus:ring-input-{dustyrose,pistachio,honey,aquafrost,lilac}-focus-ring");
-@source inline("peer-checked:bg-checked-dark-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("peer-checked:bg-radio-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("text-button-{dustyrose,pistachio,honey,aquafrost,lilac}-focus-ring");
+@source inline("border-radio-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("text-radio-legend-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("group-hover:bg-radio-hover-{dustyrose,pistachio,honey,aquafrost,lilac}");
 
 
 @theme {
@@ -38,6 +42,7 @@ safelist filter.
     --color-default: #FFFFFF; /*white*/
     --color-button-text: #2F3E3E; /*deepPine*/
     --color-button-text-on-dark: #FFFFFF; /*white*/
+    --color-input-text: #2A2A2A; /*charcoal*/
 
     /* MAIN COLORS: COLOR SCHEME PICKER */
 
@@ -192,6 +197,8 @@ safelist filter.
     --color-checkbox-lilac-disabled: #E0D3EC; /*pastelPlum*/
     --color-checkbox-lilac-disabled-icon: #9B8FA9; /*softAmethyst*/
 
+    --color-input-text: #2A2A2A; /*charcoal*/
+
     /* TEXT INPUT COLORS */
            
     --color-labeltext-dustyrose: #986767; /*deepDustyrose*/
@@ -211,6 +218,29 @@ safelist filter.
     --color-input-honey-focus-ring: #BFA73F; /*harvestGold*/
     --color-input-aquafrost-focus-ring: #4E7F8C; /*frostSteel*/
     --color-input-lilac-focus-ring: #6D4E96; /*deepOrchid*/
+
+    --color-input-text: #2A2A2A; /*charcoal*/
+
+    /* RADIOBUTTON COLORS */
+
+    --color-radio-dustyrose: #C68686; /*roseWood*/
+    --color-radio-pistachio: #78B5A1; /*mossTeal*/
+    --color-radio-honey: #BFA73F; /*harvestGold*/
+    --color-radio-aquafrost: #569AB7; /*coolLagoon*/
+    --color-radio-lilac: #9672BE; /*orchidMist*/
+
+    --color-radio-legend-dustyrose: #B56E6E; /*roseBark*/
+    --color-radio-legend-pistachio: #5F9E89; /*mossStone*/
+    --color-radio-legend-honey: #A38C2F; /*honeyAmber*/
+    --color-radio-legend-aquafrost: #3F7F99; /*coolLagoonDeep*/
+    --color-radio-legend-lilac: #7D5AA3; /*orchidMistDeep*/
+
+    --color-radio-hover-dustyrose: #F6ECEC; /* roseWood 8% */
+    --color-radio-hover-pistachio: #EEF6F3; /* mossTeal 8% */
+    --color-radio-hover-honey: #FAF6E8; /* harvestGold 8% */
+    --color-radio-hover-aquafrost: #EDF4F8; /* coolLagoon 8% */
+    --color-radio-hover-lilac: #F2EEF8; /* orchidMist 8% */
+
 
 
     /* BRAND COLORS */
