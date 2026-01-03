@@ -25,6 +25,7 @@ safelist filter.
 @source inline("text-labeltext-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("bg-input-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled");
 @source inline("focus:ring-input-{dustyrose,pistachio,honey,aquafrost,lilac}-focus-ring");
+@source inline("peer-checked:bg-checked-dark-{dustyrose,pistachio,honey,aquafrost,lilac}");
 
 
 @theme {
