@@ -38,6 +38,7 @@ const TextInput: React.FC<TextInputProps> = ({
     "focus:outline-none",
     "focus:ring-offset-2",
     "focus:ring-3",
+    theme.text,
     !isDisabled && theme.ringFocus,
     isDisabled ? theme.borderDisabled : theme.border,
     isDisabled ? theme.bgDisabled : theme.background,

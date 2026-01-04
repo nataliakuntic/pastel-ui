@@ -4,6 +4,7 @@ export interface CheckboxTheme {
   borderDisabled: string;
   bgDisabled: string;
   iconCheckedDisabled: string;
+  labelText: string;
   variants: {
     light: CheckboxVariant;
     dark: CheckboxVariant;
@@ -23,6 +24,7 @@ export const getCheckboxThemeStyle = (themeName: ThemeName): CheckboxTheme => {
     borderDisabled: `border-checkbox-${themeName}-disabled`,
     bgDisabled: `bg-checkbox-${themeName}-disabled`,
     iconCheckedDisabled: `text-checkbox-${themeName}-disabled-icon`,
+    labelText: `text-input-text`,
     variants: {
       light: {
         border: `border-checked-dark-${themeName}`,

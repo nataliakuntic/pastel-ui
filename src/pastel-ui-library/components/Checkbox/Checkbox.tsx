@@ -46,11 +46,19 @@ const Checkbox: React.FC<CheckboxProps> = ({
     "focus:outline-none",
     "focus:ring-offset-0",
     "focus:ring-2",
+    "transition-colors",
+    "duration-200",
+    "ease-out",
     !isDisabled && isChecked ? variantStyles.bgChecked : "",
     !isDisabled && !isChecked ? variantStyles.bgUnchecked : "",
     !isDisabled && variantStyles.ringFocus,
     isDisabled ? theme.borderDisabled : variantStyles.border,
     isDisabled ? theme.bgDisabled : ""
+  );
+
+  const labelClass = classNames(
+    theme.labelText,
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
   );
 
   const iconClass = classNames(
@@ -61,6 +69,15 @@ const Checkbox: React.FC<CheckboxProps> = ({
     "hidden",
     "peer-checked:block",
     "pointer-events-none",
+    "scale-0",
+    "opacity-0",
+    "peer-checked:scale-100",
+    "peer-checked:opacity-100",
+    "peer-checked:delay-[20ms]",
+    "transition-all",
+    "duration-300",
+    "ease-out",
+    "motion-reduce:transition-none",
     isDisabled ? theme.iconCheckedDisabled : variantStyles.iconChecked
   );
 
@@ -76,16 +93,12 @@ const Checkbox: React.FC<CheckboxProps> = ({
           disabled={isDisabled}
           required={isRequired}
         />
-        <label
-          htmlFor={id}
-          className={
-            isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
-          }
-        >
+        <label htmlFor={id} className={labelClass}>
           {label}
         </label>
         <svg
           className={iconClass}
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
@@ -94,7 +107,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <polyline points="20 6 9 17 4 12"></polyline>
+          <polyline points="20 6 9 17 4 12" />
         </svg>
       </div>
     </div>
