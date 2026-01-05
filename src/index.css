@@ -30,6 +30,9 @@ safelist filter.
 @source inline("border-radio-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("text-radio-legend-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("group-hover:bg-radio-hover-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("text-radio-disabled-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("border-radio-disabled-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("bg-radio-disabled-{dustyrose,pistachio,honey,aquafrost,lilac}");
 
 
 @theme {
@@ -241,6 +244,13 @@ safelist filter.
     --color-radio-hover-aquafrost: #EDF4F8; /* coolLagoon 8% */
     --color-radio-hover-lilac: #F2EEF8; /* orchidMist 8% */
 
+    --color-radio-text-disabled: #757575; /*sonicSilver*/
+
+    --color-radio-disabled-dustyrose: #8D7A7A; /* roseWood × sonicSilver */
+    --color-radio-disabled-pistachio: #768882; /* mossTeal × sonicSilver */
+    --color-radio-disabled-honey: #8B8465; /* harvestGold × sonicSilver */
+    --color-radio-disabled-aquafrost: #6C8089; /* coolLagoon × sonicSilver */
+    --color-radio-disabled-lilac: #7F748B; /* orchidMist × sonicSilver */
 
 
     /* BRAND COLORS */

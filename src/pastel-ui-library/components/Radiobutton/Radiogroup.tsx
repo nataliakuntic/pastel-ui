@@ -26,18 +26,21 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
 }) => {
   const theme = getRadiobuttonThemeStyle(colorScheme);
 
-  const fieldsetClass = classNames("flex", "flex-col", "gap-3");
+  const fieldsetClass = classNames("flex", "flex-col", "gap-3", "mb-4");
 
-  const legendClass = classNames("mb-4", theme.legendText);
+  const legendClass = classNames(
+    "mb-4",
+    isDisabled ? theme.legendDisabled : theme.legendText
+  );
 
   const labelClass = classNames(
     "inline-flex",
     "items-center",
     "gap-3",
-    "cursor-pointer",
     "select-none",
     "group",
-    theme.labelText
+    isDisabled ? theme.labelDisabled : theme.labelText,
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
   );
 
   const wrapperClass = classNames("relative", "w-4", "h-4", "inline-block");
@@ -47,7 +50,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
     "px-2",
     "py-1",
     "rounded-md",
-    theme.hoverBg
+    !isDisabled && theme.hoverBg
   );
 
   const outerCircle = classNames(
@@ -62,8 +65,8 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
     "focus:outline-none",
     "focus:ring-offset-0",
     "focus:ring-2",
-    theme.border,
-    theme.ringFocus
+    theme.ringFocus,
+    isDisabled ? theme.borderDisabled : theme.border
   );
 
   const innerDot = classNames(
@@ -80,7 +83,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
     "transition-all",
     "duration-200",
     "ease-out",
-    theme.dotChecked
+    isDisabled ? theme.dotDisabled : theme.dotChecked
   );
 
   return (

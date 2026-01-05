@@ -7,6 +7,8 @@ export interface RadiobuttonTheme {
   dotChecked: string;
   ringFocus: string;
   hoverBg: string;
+  legendDisabled: string;
+  labelDisabled: string;
   borderDisabled: string;
   dotDisabled: string;
 }
@@ -21,7 +23,9 @@ export const getRadiobuttonThemeStyle = (
     ringFocus: `focus:ring-${themeName}`,
     hoverBg: `group-hover:bg-radio-hover-${themeName}`,
     dotChecked: `peer-checked:bg-radio-${themeName}`,
-    borderDisabled: `border-checkbox-${themeName}-disabled`, //to handle
-    dotDisabled: `peer-checked:bg-checkbox-${themeName}-disabled`, //to handle
+    legendDisabled: `text-radio-disabled-${themeName} font-inter font-semibold`,
+    labelDisabled: `text-radio-text-disabled`,
+    borderDisabled: `border-radio-disabled-${themeName}`,
+    dotDisabled: `bg-radio-disabled-${themeName}`,
   };
 };

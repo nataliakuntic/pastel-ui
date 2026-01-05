@@ -12,7 +12,13 @@ import radioOptions from "./partials/radioContent";
 
 const RadiobuttonPage: React.FC = () => {
   const [scheme, setScheme] = useState<ThemeName>("dustyrose");
-  const [city, setCity] = useState<string | null>("oslo");
+  const [city, setCity] = useState<string>("oslo");
+
+  const handleChange = (newCity: string) => {
+    setCity(newCity);
+  };
+
+  const doNothing = () => {};
 
   return (
     <div>
@@ -38,7 +44,16 @@ const RadiobuttonPage: React.FC = () => {
         legend="Select your favorite city:"
         options={radioOptions}
         value={city}
-        onChange={setCity}
+        onChange={handleChange}
+      />
+
+      <Radiogroup
+        colorScheme={scheme}
+        legend="Disabled version:"
+        options={radioOptions}
+        value={"trondheim"}
+        onChange={doNothing}
+        isDisabled
       />
 
       <SubsectionHeading>Code:</SubsectionHeading>
