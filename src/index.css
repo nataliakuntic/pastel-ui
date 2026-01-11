@@ -35,6 +35,7 @@ safelist filter.
 @source inline("bg-radio-disabled-{dustyrose,pistachio,honey,aquafrost,lilac}");
 
 
+
 @theme {
 
     /* TEXT */
@@ -251,6 +252,13 @@ safelist filter.
     --color-radio-disabled-honey: #8B8465; /* harvestGold × sonicSilver */
     --color-radio-disabled-aquafrost: #6C8089; /* coolLagoon × sonicSilver */
     --color-radio-disabled-lilac: #7F748B; /* orchidMist × sonicSilver */
+
+    /* INPUT DISABLED */
+
+    --color-disabled-bg: #F3F3F3; /* cloudGray*/
+    --color-disabled-border: #D0D0D0; /* mutedStone*/
+    --color-disabled-text: #757575; /*sonicSilver*/
+    --color-disabled-placeholder: #9E9E9E; /*fogGray*/
 
 
     /* BRAND COLORS */

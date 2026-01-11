@@ -8,6 +8,7 @@ const links = [
   { to: "/checkbox", label: "Checkbox" },
   { to: "/radiobutton", label: "Radio Button" },
   { to: "/textinput", label: "Text Input" },
+  { to: "/textarea", label: "Text Area" },
   // ...other links
 ];
 
