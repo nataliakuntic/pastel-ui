@@ -7,6 +7,7 @@ import CardPage from "./pastel-ui-website/pages/CardPage";
 import CheckboxPage from "./pastel-ui-website/pages/CheckboxPage";
 import TextInputPage from "./pastel-ui-website/pages/TextInputPage";
 import RadiobuttonPage from "./pastel-ui-website/pages/RadiobuttonPage";
+import SelectPage from "./pastel-ui-website/pages/Select";
 import TextAreaPage from "./pastel-ui-website/pages/TextAreaPage";
 
 const router = createBrowserRouter([
@@ -35,16 +36,20 @@ const router = createBrowserRouter([
         element: <CheckboxPage />,
       },
       {
-        path: "/textinput",
-        element: <TextInputPage />,
-      },
-      {
         path: "/radiobutton",
         element: <RadiobuttonPage />,
       },
       {
+        path: "/select",
+        element: <SelectPage />,
+      },
+      {
         path: "/textarea",
         element: <TextAreaPage />,
+      },
+      {
+        path: "/textinput",
+        element: <TextInputPage />,
       },
     ],
   },
