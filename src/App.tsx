@@ -9,6 +9,7 @@ import TextInputPage from "./pastel-ui-website/pages/TextInputPage";
 import RadiobuttonPage from "./pastel-ui-website/pages/RadiobuttonPage";
 import SelectPage from "./pastel-ui-website/pages/Select";
 import TextAreaPage from "./pastel-ui-website/pages/TextAreaPage";
+import DateTimePickerPage from "./pastel-ui-website/pages/DateTimePickerPage";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/checkbox",
         element: <CheckboxPage />,
+      },
+      {
+        path: "/datetimepicker",
+        element: <DateTimePickerPage />,
       },
       {
         path: "/radiobutton",
