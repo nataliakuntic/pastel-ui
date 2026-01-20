@@ -11,11 +11,11 @@ List of components it provides:
 2. Button
 3. Card
 4. Checkbox
-5. Text Input
-6. Radio Button
-7. Text Area[^1]
-8. Dropdown[^2]
-9. Date and Time Picker[^2]
+5. Radio Button Text Input
+6. Select
+7. Text Area
+8. Text Input
+9. Date and Time Picker[^1]
 
 [^1]: In progress
 [^2]: To do
