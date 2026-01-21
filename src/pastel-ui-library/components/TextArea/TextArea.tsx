@@ -31,18 +31,18 @@ const TextArea: React.FC<TextAreaProps> = ({
     "p-3",
     "focus:outline-none",
     "focus:ring-offset-2",
-    "focus:ring-3",
+    "focus:ring-2",
     theme.text,
     !isDisabled && theme.ringFocus,
     isDisabled ? theme.borderDisabled : theme.border,
     isDisabled ? theme.bgDisabled : theme.background,
     isDisabled && "cursor-not-allowed select-none",
     isDisabled && "resize-none",
-    isDisabled && theme.placeholderDisabled
+    isDisabled && theme.placeholderDisabled,
   );
 
   const labelTextClass = classNames(
-    isDisabled ? theme.labelTextDisabled : theme.labelText
+    isDisabled ? theme.labelTextDisabled : theme.labelText,
   );
 
   const wrapperClass = classNames(
@@ -51,7 +51,7 @@ const TextArea: React.FC<TextAreaProps> = ({
     "gap-2",
     "mb-6",
     "w-full",
-    "max-w-sm"
+    "max-w-sm",
   );
 
   return (

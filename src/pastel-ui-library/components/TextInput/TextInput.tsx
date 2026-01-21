@@ -31,18 +31,18 @@ const TextInput: React.FC<TextInputProps> = ({
     "flex-col",
     "gap-1",
     "mb-6",
-    "max-w-xs"
+    "max-w-xs",
   );
 
   const inputClass = classNames(
     "focus:outline-none",
     "focus:ring-offset-2",
-    "focus:ring-3",
+    "focus:ring-2",
     theme.text,
     !isDisabled && theme.ringFocus,
     isDisabled ? theme.borderDisabled : theme.border,
     isDisabled ? theme.bgDisabled : theme.background,
-    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer",
   );
 
   return (

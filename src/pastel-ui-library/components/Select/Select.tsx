@@ -35,7 +35,7 @@ const Select: React.FC<SelectProps> = ({
     "text-sm",
     "focus:outline-none",
     "focus:ring-offset-2",
-    "focus:ring-3",
+    "focus:ring-2",
     "w-full",
     "max-w-xs",
     "gap-2",
@@ -44,11 +44,11 @@ const Select: React.FC<SelectProps> = ({
     !isDisabled && theme.ringFocus,
     isDisabled ? theme.borderDisabled : theme.border,
     isDisabled ? theme.bgDisabled : theme.background,
-    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer",
   );
 
   const labelTextClass = classNames(
-    isDisabled ? theme.labelTextDisabled : theme.labelText
+    isDisabled ? theme.labelTextDisabled : theme.labelText,
   );
 
   const optionClass = classNames(!isDisabled && theme.hoverBg);
