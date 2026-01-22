@@ -30,7 +30,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
 
   const legendClass = classNames(
     "mb-4",
-    isDisabled ? theme.legendDisabled : theme.legendText
+    isDisabled ? theme.legendDisabled : theme.legendText,
   );
 
   const labelClass = classNames(
@@ -40,7 +40,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
     "select-none",
     "group",
     isDisabled ? theme.labelDisabled : theme.labelText,
-    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer",
   );
 
   const wrapperClass = classNames("relative", "w-4", "h-4", "inline-block");
@@ -50,7 +50,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
     "px-2",
     "py-1",
     "rounded-md",
-    !isDisabled && theme.hoverBg
+    !isDisabled && theme.hoverBg,
   );
 
   const outerCircle = classNames(
@@ -66,7 +66,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
     "focus:ring-offset-0",
     "focus:ring-2",
     theme.ringFocus,
-    isDisabled ? theme.borderDisabled : theme.border
+    isDisabled ? theme.borderDisabled : theme.border,
   );
 
   const innerDot = classNames(
@@ -83,7 +83,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
     "transition-all",
     "duration-200",
     "ease-out",
-    isDisabled ? theme.dotDisabled : theme.dotChecked
+    isDisabled ? theme.dotDisabled : theme.dotChecked,
   );
 
   return (

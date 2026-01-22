@@ -14,7 +14,7 @@ export interface RadiobuttonTheme {
 }
 
 export const getRadiobuttonThemeStyle = (
-  themeName: ThemeName
+  themeName: ThemeName,
 ): RadiobuttonTheme => {
   return {
     legendText: `text-radio-legend-${themeName} font-inter font-semibold`,
@@ -23,9 +23,9 @@ export const getRadiobuttonThemeStyle = (
     ringFocus: `focus:ring-${themeName}`,
     hoverBg: `group-hover:bg-radio-hover-${themeName}`,
     dotChecked: `peer-checked:bg-radio-${themeName}`,
-    legendDisabled: `text-radio-disabled-${themeName} font-inter font-semibold`,
-    labelDisabled: `text-radio-text-disabled`,
-    borderDisabled: `border-radio-disabled-${themeName}`,
-    dotDisabled: `bg-radio-disabled-${themeName}`,
+    legendDisabled: `text-disabled-text font-inter font-semibold`,
+    labelDisabled: `text-disabled-text`,
+    borderDisabled: `border-disabled-text`,
+    dotDisabled: `bg-disabled-text`,
   };
 };

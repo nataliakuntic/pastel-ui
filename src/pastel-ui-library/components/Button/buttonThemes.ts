@@ -24,7 +24,7 @@ interface VariantStyle {
 export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
   return {
     text: `text-button-text`,
-    textDisabled: `text-button-${themeName}-disabled-text`,
+    textDisabled: `text-disabled-text`,
     textOnDark: `active:text-button-text-on-dark`,
     variants: {
       primary: {
@@ -32,8 +32,8 @@ export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
         bgHover: `hover:bg-button-${themeName}-hover`,
         bgActive: `active:bg-button-${themeName}-active`,
         border: `border-button-${themeName}-stroke`,
-        borderDisabled: `border-button-${themeName}-disabled-stroke`,
-        bgDisabled: `bg-button-${themeName}-disabled`,
+        borderDisabled: `border-disabled-border`,
+        bgDisabled: `bg-disabled-bg`,
         ringFocus: `focus:ring-button-${themeName}-focus-ring`,
       },
       secondary: {
@@ -41,8 +41,8 @@ export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
         bgHover: `hover:bg-button-${themeName}-hover`,
         bgActive: `active:bg-button-${themeName}-active`,
         border: `border-button-${themeName}-stroke`,
-        borderDisabled: `border-button-${themeName}-disabled-stroke`,
-        bgDisabled: `bg-button-${themeName}-disabled`,
+        borderDisabled: `border-disabled-border`,
+        bgDisabled: `bg-disabled-bg`,
         ringFocus: `focus:ring-button-${themeName}-focus-ring`,
       },
       danger: {
@@ -50,8 +50,8 @@ export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
         bgHover: `hover:bg-button-${themeName}-hover`,
         bgActive: `active:bg-button-${themeName}-active`,
         border: `border-button-${themeName}-danger-stroke`,
-        borderDisabled: `border-button-${themeName}-disabled-stroke`,
-        bgDisabled: `bg-button-${themeName}-disabled`,
+        borderDisabled: `border-disabled-border`,
+        bgDisabled: `bg-disabled-bg`,
         ringFocus: `focus:ring-button-${themeName}-focus-ring`,
       },
     },

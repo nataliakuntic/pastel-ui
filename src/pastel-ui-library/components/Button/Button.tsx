@@ -53,7 +53,7 @@ const Button: React.FC<ButtonProps> = ({
     isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer",
     !isDisabled && bgHover,
     !isDisabled && bgActive,
-    !isDisabled && textOnDark
+    !isDisabled && textOnDark,
   );
 
   return (

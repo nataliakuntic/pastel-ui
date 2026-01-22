@@ -31,7 +31,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
     "flex",
     "gap-2",
     "flex-grow-0",
-    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer",
   );
 
   const checkboxClass = classNames(
@@ -53,12 +53,12 @@ const Checkbox: React.FC<CheckboxProps> = ({
     !isDisabled && !isChecked ? variantStyles.bgUnchecked : "",
     !isDisabled && variantStyles.ringFocus,
     isDisabled ? theme.borderDisabled : variantStyles.border,
-    isDisabled ? theme.bgDisabled : ""
+    isDisabled ? theme.bgDisabled : "",
   );
 
   const labelClass = classNames(
     theme.labelText,
-    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer"
+    isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer",
   );
 
   const iconClass = classNames(
@@ -78,7 +78,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
     "duration-300",
     "ease-out",
     "motion-reduce:transition-none",
-    isDisabled ? theme.iconCheckedDisabled : variantStyles.iconChecked
+    isDisabled ? theme.iconCheckedDisabled : variantStyles.iconChecked,
   );
 
   return (
