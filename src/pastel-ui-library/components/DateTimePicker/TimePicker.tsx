@@ -33,7 +33,7 @@ const TimePicker: React.FC<TimePickerProps> = ({
     "focus:ring-2",
     "inline-block",
     "w-36",
-    theme.text,
+    isDisabled ? theme.textDisabled : theme.text,
     !isDisabled && theme.ringFocus,
     isDisabled ? theme.borderDisabled : theme.border,
     isDisabled ? theme.bgDisabled : theme.background,

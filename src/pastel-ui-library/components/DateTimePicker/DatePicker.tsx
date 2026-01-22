@@ -33,7 +33,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
     "focus:ring-2",
     "inline-block",
     "w-48",
-    theme.text,
+    isDisabled ? theme.textDisabled : theme.text,
     !isDisabled && theme.ringFocus,
     isDisabled ? theme.borderDisabled : theme.border,
     isDisabled ? theme.bgDisabled : theme.background,

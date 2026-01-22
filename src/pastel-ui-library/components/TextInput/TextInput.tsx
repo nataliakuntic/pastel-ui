@@ -45,9 +45,13 @@ const TextInput: React.FC<TextInputProps> = ({
     isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer",
   );
 
+  const labelTextClass = classNames(
+    isDisabled ? theme.labelTextDisabled : theme.labelText,
+  );
+
   return (
     <div className={wrapperClass}>
-      <label htmlFor={id} className={theme.labelText}>
+      <label htmlFor={id} className={labelTextClass}>
         {label}
       </label>
       <input
