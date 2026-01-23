@@ -8,7 +8,7 @@ interface TextInputProps {
   type: "text" | "number" | "email" | "password";
   label?: React.ReactNode;
   value: string | number | undefined;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (value: string) => void;
   isDisabled?: boolean;
   placeholder?: string;
 }
@@ -29,7 +29,7 @@ const TextInput: React.FC<TextInputProps> = ({
   const wrapperClass = classNames(
     "flex",
     "flex-col",
-    "gap-1",
+    "gap-1.5",
     "mb-6",
     "max-w-xs",
   );
@@ -60,7 +60,7 @@ const TextInput: React.FC<TextInputProps> = ({
         placeholder={placeholder}
         className={inputClass}
         value={value}
-        onChange={onChange}
+        onChange={(e) => onChange(e.target.value)}
         disabled={isDisabled}
       />
     </div>

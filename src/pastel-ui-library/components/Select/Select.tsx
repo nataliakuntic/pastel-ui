@@ -29,10 +29,6 @@ const Select: React.FC<SelectProps> = ({
   const theme = getSelectThemeStyle(colorScheme);
 
   const selectClassName = classNames(
-    "px-3",
-    "py-2",
-    "border",
-    "text-sm",
     "focus:outline-none",
     "focus:ring-offset-2",
     "focus:ring-2",
@@ -51,11 +47,9 @@ const Select: React.FC<SelectProps> = ({
     isDisabled ? theme.labelTextDisabled : theme.labelText,
   );
 
-  const optionClass = classNames(!isDisabled && theme.hoverBg);
-
   return (
     <div>
-      <label className="flex flex-col gap-1">
+      <label className="flex flex-col gap-1.5">
         <span className={labelTextClass}>{label}</span>
         <select
           name={name}
@@ -65,11 +59,7 @@ const Select: React.FC<SelectProps> = ({
           className={selectClassName}
         >
           {options.map((option) => (
-            <option
-              className={optionClass}
-              key={option.value}
-              value={option.value}
-            >
+            <option key={option.value} value={option.value}>
               {option.label || option.value}
             </option>
           ))}

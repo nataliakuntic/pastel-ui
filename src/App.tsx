@@ -7,7 +7,7 @@ import CardPage from "./pastel-ui-website/pages/CardPage";
 import CheckboxPage from "./pastel-ui-website/pages/CheckboxPage";
 import TextInputPage from "./pastel-ui-website/pages/TextInputPage";
 import RadiobuttonPage from "./pastel-ui-website/pages/RadiobuttonPage";
-import SelectPage from "./pastel-ui-website/pages/Select";
+import SelectPage from "./pastel-ui-website/pages/SelectPage";
 import TextAreaPage from "./pastel-ui-website/pages/TextAreaPage";
 import DateTimePickerPage from "./pastel-ui-website/pages/DateTimePickerPage";
 

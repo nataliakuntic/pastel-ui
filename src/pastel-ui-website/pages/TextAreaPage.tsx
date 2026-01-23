@@ -14,8 +14,8 @@ const TextAreaPage: React.FC = () => {
 
   const [text, setText] = useState<string>("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setText(e.target.value);
+  const handleChange = (newValue: string) => {
+    setText(newValue);
   };
 
   const doNothing = () => {};

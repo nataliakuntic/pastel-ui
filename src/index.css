@@ -47,7 +47,8 @@ safelist filter.
     --color-default: #FFFFFF; /*white*/
     --color-button-text: #2F3E3E; /*deepPine*/
     --color-button-text-on-dark: #FFFFFF; /*white*/
-    --color-input-text: #2A2A2A; /*charcoal*/
+    --color-input-text: #1C1C1C; /*charcoal*/
+    --color-label-text: #424242; /* midnight charcoal */
 
     /* MAIN COLORS: COLOR SCHEME PICKER */
 
@@ -205,6 +206,8 @@ safelist filter.
     --color-input-text: #2A2A2A; /*charcoal*/
 
     /* TEXT INPUT COLORS */
+
+    --color-pistachio-border: #C9DEBE; /* pistachio-strong */
            
     --color-labeltext-dustyrose: #986767; /*deepDustyrose*/
     --color-labeltext-pistachio: #495857; /*softCharcoal*/
@@ -221,8 +224,8 @@ safelist filter.
     --color-input-dustyrose-focus-ring: #CC8787; /*blushCinder*/
     --color-input-pistachio-focus-ring: #5FA99B; /*tealLeaf*/
     --color-input-honey-focus-ring: #BFA73F; /*harvestGold*/
-    --color-input-aquafrost-focus-ring: #4E7F8C; /*frostSteel*/
-    --color-input-lilac-focus-ring: #6D4E96; /*deepOrchid*/
+    --color-input-aquafrost-focus-ring: #558A95; /*frostSteel*/
+    --color-input-lilac-focus-ring: #8C74C8; /*deepOrchid*/
 
     --color-input-text: #2A2A2A; /*charcoal*/
 
@@ -265,8 +268,8 @@ safelist filter.
     /* INPUT DISABLED */
 
     --color-disabled-bg: #F3F3F3; /* cloudGray*/
-    --color-disabled-border: #D0D0D0; /* mutedStone*/
-    --color-disabled-text: #757575; /*sonicSilver*/
+    --color-disabled-border: #C6C6C6; /* mutedStone*/
+    --color-disabled-text: #A8A8A8; /*sonicSilver*/
     --color-disabled-placeholder: #9E9E9E; /*fogGray*/
 
 
@@ -282,5 +285,6 @@ safelist filter.
 
     --font-inter: "Inter", "sans-serif";
     --font-roboto: "Roboto Mono", "mono";
+    --font-playfair: "Playfair Display", serif;
    
     }

@@ -17,21 +17,20 @@ const TextInputPage: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
-  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setName(e.target.value);
+  const handleNameChange = (newName: string) => {
+    setName(newName);
   };
 
-  const handleAgeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newAge = parseInt(e.target.value) || 0;
-    setAge(newAge);
+  const handleAgeChange = (newAge: string) => {
+    setAge(parseInt(newAge) || 0);
   };
 
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
+  const handleEmailChange = (newEmail: string) => {
+    setEmail(newEmail);
   };
 
-  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPassword(e.target.value);
+  const handlePasswordChange = (newPassword: string) => {
+    setPassword(newPassword);
   };
 
   const doNothing = () => {};

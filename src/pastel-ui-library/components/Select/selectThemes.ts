@@ -3,7 +3,6 @@ import { ThemeName } from "../../types";
 export interface SelectTheme {
   border: string;
   background: string;
-  hoverBg: string;
   text: string;
   textDisabled: string;
   borderDisabled: string;
@@ -15,15 +14,17 @@ export interface SelectTheme {
 
 export const getSelectThemeStyle = (themeName: ThemeName): SelectTheme => {
   return {
-    border: `border-${themeName} border-2`,
-    background: `bg-default p-3`,
+    border:
+      themeName === "pistachio"
+        ? `border-pistachio-border border-[1.75px]`
+        : `border-${themeName} border-[1.75px]`,
+    background: `bg-default py-[11px] px-[12px]`,
     text: `text-input-text`,
     textDisabled: `text-disabled-text`,
-    hoverBg: `hover:bg-select-hover-${themeName}`,
-    borderDisabled: `border-disabled-border border-2`,
-    bgDisabled: `bg-disabled-bg p-3`,
-    labelTextDisabled: `text-disabled-text font-inter font-semibold`,
-    labelText: `text-labeltext-${themeName} font-inter font-semibold`,
-    ringFocus: `focus:ring-input-${themeName}-focus-ring`,
+    borderDisabled: `border-disabled-border border-[1.75px]`,
+    bgDisabled: `bg-disabled-bg py-[10px] px-[12px]`,
+    labelTextDisabled: `text-disabled-text font-inter font-medium leading-[1.35] text-[15px]`,
+    labelText: `text-label-text font-inter font-medium leading-[1.35] text-[15px]`,
+    ringFocus: `focus:ring-input-${themeName}-focus-ring focus:shadow-[inset_0_0_0_0.5px_rgba(0,0,0,0.04)]`,
   };
 };

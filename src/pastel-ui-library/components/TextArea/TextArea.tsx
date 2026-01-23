@@ -6,7 +6,7 @@ interface TextAreaProps {
   colorScheme: ThemeName;
   label?: React.ReactNode;
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  onChange: (value: string) => void;
   isDisabled?: boolean;
   placeholder?: string;
   rows: number;
@@ -56,7 +56,7 @@ const TextArea: React.FC<TextAreaProps> = ({
 
   return (
     <div className={wrapperClass}>
-      <label className="flex flex-col gap-2">
+      <label className="flex flex-col gap-1.5">
         {label && <span className={labelTextClass}>{label}</span>}
         <textarea
           className={textareaClass}
@@ -64,7 +64,7 @@ const TextArea: React.FC<TextAreaProps> = ({
           rows={rows}
           cols={cols}
           value={value}
-          onChange={onChange}
+          onChange={(e) => onChange(e.target.value)}
           disabled={isDisabled}
         />
       </label>
