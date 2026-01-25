@@ -60,7 +60,6 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
     "appearance-none",
     "w-4",
     "h-4",
-    "border-2",
     "rounded-full",
     "focus:outline-none",
     "focus:ring-offset-0",

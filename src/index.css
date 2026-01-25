@@ -3,7 +3,7 @@
 Dynamically generated Tailwind classes require safelist. This is the list of all classes that need to be "caught" by the 
 safelist filter.
 */
-@source inline("bg-button-{dustyrose,pistachio,honey,aquafrost,lilac}-{primary,secondary,disabled}");
+@source inline("bg-button-{dustyrose,pistachio,honey,aquafrost,lilac}-{primary,secondary,tertiary,disabled}");
 @source inline("{hover:,active:}bg-button-{dustyrose,pistachio,honey,aquafrost,lilac}-{hover,active}");
 @source inline("text-button-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled-text");
 @source inline("border-button-{dustyrose,pistachio,honey,aquafrost,lilac}-disabled-stroke");
@@ -34,6 +34,12 @@ safelist filter.
 @source inline("border-radio-disabled-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("bg-radio-disabled-{dustyrose,pistachio,honey,aquafrost,lilac}");
 @source inline("hover:bg-select-hover-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("border-checkbox-border-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("text-checkbox-checkmark-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("border-checkbox-checkmark-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("bg-checkbox-checkmark-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("focus:ring-checkbox-ring-{dustyrose,pistachio,honey,aquafrost,lilac}");
+@source inline("bg-checkbox-bg-checked-{dustyrose,pistachio,honey,aquafrost,lilac}");
 
 
 
@@ -87,6 +93,7 @@ safelist filter.
 
    --color-button-dustyrose-primary: #E2C3C3; /*dustyRose*/
    --color-button-dustyrose-secondary: #F7F1F1; /*pinkSnow*/
+   --color-button-dustyrose-tertiary: #F7F1F1; /*pinkSnow*/
    --color-button-dustyrose-disabled: #F1DDDD; /*blushCloud*/
    --color-button-dustyrose-hover: #D89A9A; /*rosePetal*/
    --color-button-dustyrose-active: #C88282; /*vintageRose*/
@@ -100,24 +107,24 @@ safelist filter.
 
     /*pistachio*/
 
-   --color-button-pistachio-primary: #D8ECCF; /*pistachio*/
-   --color-button-pistachio-secondary: #F1FFEB; /*seaFoam*/
+   --color-button-pistachio-primary: #5F9E8D;
+   --color-button-pistachio-secondary: #D8ECCF; /*pistachio*/
+   --color-button-pistachio-tertiary: #F1FFEB; /*seaFoam*/
    --color-button-pistachio-disabled: #D6E6DE; /*mistyMint*/
    --color-button-pistachio-hover: #A8D5C4; /*mintCream*/
    --color-button-pistachio-active: #78B5A1; 
    
 
    --color-button-pistachio-stroke: #2F3E3E; /*deepPine*/
-   --color-button-pistachio-danger-stroke: #A8D5C4; /*pistachio*/
-   --color-button-pistachio-disabled-stroke: #7D9B91; /*fadedPine*/
+   --color-button-pistachio-danger-stroke: #A8D5C4; 
    --color-button-pistachio-focus-ring: #5FA99B; /*tealLeaf*/
 
-   --color-button-pistachio-disabled-text: #7D9B91; /*fadedPine*/
     
     /*honey*/
 
     --color-button-honey-primary: #E3D996; /*honey*/
     --color-button-honey-secondary: #FFF9D5; /*paleSun*/
+    --color-button-honey-tertiary: #FFF9D5; /*paleSun*/
     --color-button-honey-disabled: #F8F3DB; /*ivoryMist*/
     --color-button-honey-hover: #EBD47C; /*butterGold*/
     --color-button-honey-active: #D7BE5D; /*amberGrain*/
@@ -133,6 +140,7 @@ safelist filter.
     
     --color-button-aquafrost-primary: #AFDEE3; /*aquafrost*/
     --color-button-aquafrost-secondary: #E4F6F8; /*iceMist*/
+    --color-button-aquafrost-tertiary: #E4F6F8; /*iceMist*/
     --color-button-aquafrost-disabled: #E3EFF4; /*paleSky*/
     --color-button-aquafrost-hover: #97CCD2; /*iceBlue*/
     --color-button-aquafrost-active: #71ACB3; /*stormTeal*/
@@ -148,6 +156,7 @@ safelist filter.
     
     --color-button-lilac-primary: #C0B0EE; /*lilac*/
     --color-button-lilac-secondary: #F3EFFF; /*lavenderFog*/
+    --color-button-lilac-tertiary: #F3EFFF; /*lavenderFog*/
     --color-button-lilac-disabled: #EEE7F4; /*palePlum*/
     --color-button-lilac-hover: #D0BDF0; /*lavenderDrift*/
     --color-button-lilac-active: #A48CCB; /*irisSmoke*/
@@ -182,6 +191,40 @@ safelist filter.
    --color-inline-button-lilac: #8A75AC; /*lavenderMist*/
 
     /* CHECKBOX COLORS */
+
+    /* new scheme */
+
+    --color-checkbox-border-dustyrose: #D3A9A9; /* deepened pastel border */
+    --color-checkbox-checkmark-dustyrose: #9F5F5F; /* deep warm rose */
+    --color-checkbox-bg-checked-dustyrose: #F4EAEA; /* light rosy wash */
+    --color-checkbox-bg-hover-dustyrose: #F7EFEF; /* slightly lighter hover */
+    --color-checkbox-ring-dustyrose: rgba(226, 195, 195, 0.45); /* dustyrose at 45% */
+    
+    --color-checkbox-border-pistachio: #BEDDB1; /* deeper pistachio */
+    --color-checkbox-checkmark-pistachio: #708E6B; /* herb green */
+    --color-checkbox-bg-checked-pistachio: #F4FAF2; /* soft green tint */
+    --color-checkbox-bg-hover-pistachio: #F5FAF1;
+    --color-checkbox-ring-pistachio: rgba(210, 236, 200, 0.55);
+
+    --color-checkbox-border-honey: #D4C676; /* deeper warm gold */
+    --color-checkbox-checkmark-honey: #8A7A2F; /* rich natural honey */
+    --color-checkbox-bg-checked-honey: #F9F6E5; /* warm sunlit tint */
+    --color-checkbox-bg-hover-honey: #FBF8EB;
+    --color-checkbox-ring-honey: rgba(227, 217, 150, 0.45);
+
+    --color-checkbox-border-aquafrost: #98CBD1; /* deeper lagoon border */
+    --color-checkbox-checkmark-aquafrost: #3F7F99; /* cool deep teal */
+    --color-checkbox-bg-checked-aquafrost: #EDF4F8; /* frosty tint */
+    --color-checkbox-bg-hover-aquafrost: #F3F8FA;
+    --color-checkbox-ring-aquafrost: rgba(175, 222, 227, 0.45);
+
+    --color-checkbox-border-lilac: #B8A5EA; /* deeper violet */
+    --color-checkbox-checkmark-lilac: #5C4E9D; /* saturated lilac core */
+    --color-checkbox-bg-checked-lilac: #F3F0FB; /* soft lavender tint */
+    --color-checkbox-bg-hover-lilac: #F6F3FC;
+    --color-checkbox-ring-lilac: rgba(192, 176, 238, 0.45);
+
+    /* old scheme */
 
     --color-checked-dark-dustyrose: #C68686; /*roseWood*/
     --color-checked-dark-pistachio: #78B5A1; /*mossTeal*/
@@ -234,7 +277,7 @@ safelist filter.
     --color-radio-dustyrose: #C68686; /*roseWood*/
     --color-radio-pistachio: #78B5A1; /*mossTeal*/
     --color-radio-honey: #BFA73F; /*harvestGold*/
-    --color-radio-aquafrost: #569AB7; /*coolLagoon*/
+    --color-radio-aquafrost: #8DBDC6; /*coolLagoon*/
     --color-radio-lilac: #9672BE; /*orchidMist*/
 
     --color-radio-legend-dustyrose: #B56E6E; /*roseBark*/
@@ -246,7 +289,7 @@ safelist filter.
     --color-radio-hover-dustyrose: #F6ECEC; /* roseWood 8% */
     --color-radio-hover-pistachio: #EEF6F3; /* mossTeal 8% */
     --color-radio-hover-honey: #FAF6E8; /* harvestGold 8% */
-    --color-radio-hover-aquafrost: #EDF4F8; /* coolLagoon 8% */
+    --color-radio-hover-aquafrost: #E8F2F4; /* coolLagoon 8% */
     --color-radio-hover-lilac: #F2EEF8; /* orchidMist 8% */
 
     --color-radio-text-disabled: #757575; /*sonicSilver*/

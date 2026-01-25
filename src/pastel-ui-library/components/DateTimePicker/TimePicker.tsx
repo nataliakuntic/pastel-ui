@@ -46,7 +46,7 @@ const TimePicker: React.FC<TimePickerProps> = ({
 
   return (
     <div className={wrapperClass}>
-      <label className="flex flex-col gap-1">
+      <label className="flex flex-col gap-1.5">
         <span className={labelTextClass}>{label}</span>
         <input
           type="time"

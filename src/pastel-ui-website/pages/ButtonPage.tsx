@@ -36,9 +36,12 @@ const ButtonPage: React.FC = () => {
 
       <div className="ml-7 mt-10 flex flex-row gap-8">
         <Button variant="primary" colorScheme={scheme}>
-          ACCEPT
+          GET STARTED
         </Button>
         <Button variant="secondary" colorScheme={scheme}>
+          ACCEPT
+        </Button>
+        <Button variant="tertiary" colorScheme={scheme}>
           READ MORE
         </Button>
         <Button variant="danger" colorScheme={scheme}>
@@ -61,9 +64,12 @@ const ButtonPage: React.FC = () => {
 
       <div className="ml-7 mt-10 flex flex-row gap-8">
         <Button variant="primary" colorScheme={scheme} isRounded>
-          ACCEPT
+          GET STARTED
         </Button>
         <Button variant="secondary" colorScheme={scheme} isRounded>
+          ACCEPT
+        </Button>
+        <Button variant="tertiary" colorScheme={scheme} isRounded>
           READ MORE
         </Button>
         <Button variant="danger" colorScheme={scheme} isRounded>

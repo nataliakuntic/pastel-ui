@@ -4,7 +4,7 @@ import { ThemeName } from "../../types";
 
 interface ButtonProps {
   colorScheme: ThemeName;
-  variant?: "primary" | "secondary" | "danger";
+  variant?: "primary" | "secondary" | "tertiary" | "danger";
   isDisabled?: boolean;
   onClick?: () => void;
   isRounded?: boolean;
@@ -21,8 +21,9 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const theme = getButtonThemeStyle(colorScheme);
 
-  const { text, textDisabled, textOnDark } = theme;
+  const { textDisabled, textOnDark } = theme;
   const {
+    text,
     bg,
     bgHover,
     bgActive,
