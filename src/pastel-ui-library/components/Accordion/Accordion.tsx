@@ -60,22 +60,20 @@ const Accordion: React.FC<AccordionProps> = ({
       scheme.labelBg,
       roundedPanels ? `rounded-2xl ${scheme.border} border` : "",
       roundedPanels && isExpanded ? "border-b-0" : "",
-      !roundedPanels && (!isLast || isExpanded) ? "border-b" : ""
+      !roundedPanels && (!isLast || isExpanded) ? "border-b" : "",
     );
 
     const expandedClasses = classNames(
       "p-5",
       scheme.contentBg,
       !roundedPanels && !isLast ? "border-b" : "",
-      roundedPanels ? `rounded-2xl ${scheme.border} border` : ""
+      roundedPanels ? `rounded-2xl ${scheme.border} border` : "",
     );
 
     return (
       <div key={item.id} className={roundedPanels ? "mb-2" : ""}>
         <div className={panelClasses} onClick={() => handleClick(index)}>
-          <div className={`pl-3 text-secondary font-semibold font-inter`}>
-            {item.label}
-          </div>
+          <div className={"pl-3"}>{item.label}</div>
           {icon}
         </div>
         {isExpanded && <div className={expandedClasses}>{item.content}</div>}
