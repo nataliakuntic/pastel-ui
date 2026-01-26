@@ -16,6 +16,8 @@ interface VariantStyle {
   bg: string;
   bgHover: string;
   bgActive: string;
+  borderHover?: string;
+  borderActive?: string;
   border: string;
   borderDisabled: string;
   bgDisabled: string;
@@ -30,8 +32,8 @@ export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
       primary: {
         text: `text-default`,
         bg: `bg-button-${themeName}-primary`,
-        bgHover: `hover:bg-button-${themeName}-hover`,
-        bgActive: `active:bg-button-${themeName}-active`,
+        bgHover: `hover:bg-button-${themeName}-primary-hover`,
+        bgActive: `active:bg-button-${themeName}-primary-active`,
         border: `border-button-${themeName}-stroke`,
         borderDisabled: `border-disabled-border`,
         bgDisabled: `bg-disabled-bg`,
@@ -63,6 +65,8 @@ export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
         bgHover: `hover:bg-button-${themeName}-hover`,
         bgActive: `active:bg-button-${themeName}-active`,
         border: `border-button-${themeName}-danger-stroke`,
+        borderHover: `hover:border-button-${themeName}-stroke`,
+        borderActive: `active:border-button-${themeName}-stroke`,
         borderDisabled: `border-disabled-border`,
         bgDisabled: `bg-disabled-bg`,
         ringFocus: `focus:ring-button-${themeName}-focus-ring`,

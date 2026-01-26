@@ -28,6 +28,8 @@ const Button: React.FC<ButtonProps> = ({
     bgHover,
     bgActive,
     border,
+    borderHover,
+    borderActive,
     borderDisabled,
     bgDisabled,
     ringFocus,
@@ -53,6 +55,8 @@ const Button: React.FC<ButtonProps> = ({
     isRounded && "rounded-full",
     isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer",
     !isDisabled && bgHover,
+    !isDisabled && borderHover,
+    !isDisabled && borderActive,
     !isDisabled && bgActive,
     !isDisabled && textOnDark,
   );
