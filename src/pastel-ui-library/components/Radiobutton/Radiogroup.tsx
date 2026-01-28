@@ -10,6 +10,7 @@ export interface RadioOption {
 interface RadiogroupProps {
   colorScheme: ThemeName;
   legend: React.ReactNode;
+  name: string;
   options: RadioOption[];
   value: string | null;
   onChange: (nextValue: string) => void;
@@ -19,6 +20,7 @@ interface RadiogroupProps {
 const Radiogroup: React.FC<RadiogroupProps> = ({
   colorScheme,
   legend,
+  name,
   options,
   value,
   onChange,
@@ -94,6 +96,7 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
           <span className={wrapperClass}>
             <input
               type="radio"
+              name={name}
               value={option.value}
               checked={value === option.value}
               onChange={() => onChange(option.value)}

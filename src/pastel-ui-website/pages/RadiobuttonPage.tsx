@@ -44,6 +44,7 @@ const RadiobuttonPage: React.FC = () => {
         legend="Select your favorite city:"
         options={radioOptions}
         value={city}
+        name="favorite-city"
         onChange={handleChange}
       />
 
@@ -52,6 +53,7 @@ const RadiobuttonPage: React.FC = () => {
         legend="Disabled version:"
         options={radioOptions}
         value={"trondheim"}
+        name="favorite-city-disabled"
         onChange={doNothing}
         isDisabled
       />
