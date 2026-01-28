@@ -1,4 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "@fontsource-variable/inter";
+import "@fontsource-variable/roboto-mono";
 import Root from "./pastel-ui-website/pages/Root";
 import HomePage from "./pastel-ui-website/pages/HomePage";
 import AccordionPage from "./pastel-ui-website/pages/AccordionPage";
