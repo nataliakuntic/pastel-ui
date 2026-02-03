@@ -40,10 +40,16 @@ export const getButtonThemeStyle = (themeName: ThemeName): ButtonTheme => {
         ringFocus: `focus:ring-button-${themeName}-focus-ring`,
       },
       secondary: {
-        text: `text-button-text`,
+        text: themeName === "boutique" ? `text-default` : `text-button-text`,
         bg: `bg-button-${themeName}-secondary`,
-        bgHover: `hover:bg-button-${themeName}-hover`,
-        bgActive: `active:bg-button-${themeName}-active`,
+        bgHover:
+          themeName === "boutique"
+            ? `hover:bg-button-boutique-secondary-hover`
+            : `hover:bg-button-${themeName}-hover`,
+        bgActive:
+          themeName === "boutique"
+            ? `active:bg-button-boutique-secondary-active`
+            : `active:bg-button-${themeName}-active`,
         border: `border-button-${themeName}-stroke`,
         borderDisabled: `border-disabled-border`,
         bgDisabled: `bg-disabled-bg`,

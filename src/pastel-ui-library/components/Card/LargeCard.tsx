@@ -21,7 +21,8 @@ const theme = (themeName: ThemeName) => {
     description: "text-description font-light font-inter leading-6",
     expandedDetails:
       "text-description font-light font-inter leading-6 pt-1 pb-3.5 px-3.5",
-    containerClasses: `bg-${themeName} p-5`,
+    containerClasses:
+      themeName === "boutique" ? `bg-card-boutique p-5` : `bg-${themeName} p-5`,
     inlineButton: {
       text: `text-sm font-inter uppercase font-semibold text-inline-button-${themeName}`,
       hoverBg: `hover:bg-inline-button-${themeName}`,
@@ -63,45 +64,41 @@ const LargeCard: React.FC<LargeCardProps> = ({
     "mb-2.5",
     styles.inlineButton?.text,
     styles.inlineButton?.hoverBg,
-    styles.inlineButton?.hoverText
+    styles.inlineButton?.hoverText,
   );
 
   const contentBackground = classNames(
     "bg-default",
     "shadow-md",
     "p-1.5",
-    "text-left"
+    "text-left",
   );
 
   //CONTENT DISPLAY
 
-  const content = (
+  return (
     <>
-      <div className={contentBackground}>
-        <img src={img} alt={alt} className="w-full h-auto" />
-        <div className={`${styles.title} pt-2.5 pl-3.5`}>{title}</div>
-        <div className={`${styles.subtitle} pl-3.5`}>{subtitle}</div>
-        <div className={`${styles.description} p-3.5`}>{description}</div>
+      <div className={`${styles.containerClasses} max-w-lg`}>
+        <div className={contentBackground}>
+          <img src={img} alt={alt} className="w-full h-auto" />
+          <div className={`${styles.title} pt-2.5 pl-3.5`}>{title}</div>
+          <div className={`${styles.subtitle} pl-3.5`}>{subtitle}</div>
+          <div className={`${styles.description} p-3.5`}>{description}</div>
 
-        {isExpandable && styles.inlineButton && (
-          <button onClick={handleClick} className={inlineButtonClass}>
-            {isExpanded ? "Show Less" : "Read More"}
-          </button>
-        )}
+          {isExpandable && styles.inlineButton && (
+            <button onClick={handleClick} className={inlineButtonClass}>
+              {isExpanded ? "Show Less" : "Read More"}
+            </button>
+          )}
 
-        {isExpanded && expandedDetails && (
-          <div className={styles.expandedDetails + " mt-2"}>
-            {expandedDetails}
-          </div>
-        )}
+          {isExpanded && expandedDetails && (
+            <div className={styles.expandedDetails + " mt-2"}>
+              {expandedDetails}
+            </div>
+          )}
+        </div>
       </div>
     </>
-  );
-
-  return hasContainer ? (
-    <div className={`${styles.containerClasses} max-w-lg`}>{content}</div>
-  ) : (
-    content
   );
 };
 

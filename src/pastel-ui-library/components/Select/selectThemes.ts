@@ -13,18 +13,23 @@ export interface SelectTheme {
 }
 
 export const getSelectThemeStyle = (themeName: ThemeName): SelectTheme => {
+  const borderColor =
+    themeName === "pistachio"
+      ? "border-pistachio-border"
+      : `border-${themeName}`;
+
+  const borderWidth =
+    themeName === "boutique" ? "border-[1.25px]" : "border-[1.75px]";
+
   return {
-    border:
-      themeName === "pistachio"
-        ? `border-pistachio-border border-[1.75px]`
-        : `border-${themeName} border-[1.75px]`,
+    border: `${borderColor} ${borderWidth}`,
     background: `bg-default py-[11px] px-[12px]`,
-    text: `text-input-text`,
-    textDisabled: `text-disabled-text`,
+    text: `text-input-text/90 font-inter font-normal`,
+    textDisabled: `text-disabled-text font-inter font-normal`,
     borderDisabled: `border-disabled-border border-[1.75px]`,
     bgDisabled: `bg-disabled-bg py-[10px] px-[12px]`,
-    labelTextDisabled: `text-disabled-text font-inter font-medium leading-[1.35] text-[15px]`,
-    labelText: `text-label-text font-inter font-medium leading-[1.35] text-[15px]`,
-    ringFocus: `focus:ring-input-${themeName}-focus-ring focus:shadow-[inset_0_0_0_0.5px_rgba(0,0,0,0.04)]`,
+    labelTextDisabled: `text-disabled-text font-inter uppercase font-light text-[13px] tracking-[0.12em]`,
+    labelText: `text-label-text font-inter uppercase font-light text-[13px] tracking-[0.12em]`,
+    ringFocus: `focus:ring-input-${themeName}-focus-ring`,
   };
 };

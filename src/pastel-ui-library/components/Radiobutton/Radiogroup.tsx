@@ -38,19 +38,29 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
   const labelClass = classNames(
     "inline-flex",
     "items-center",
-    "gap-3",
+    "gap-3.5",
     "select-none",
     "group",
+    "py-1.5",
+    "px-1",
     isDisabled ? theme.labelDisabled : theme.labelText,
     isDisabled ? "cursor-not-allowed select-none" : "cursor-pointer",
   );
 
-  const wrapperClass = classNames("relative", "w-4", "h-4", "inline-block");
+  const wrapperClass = classNames(
+    "relative",
+    "w-5",
+    "h-5",
+    "inline-flex",
+    "items-center",
+    "justify-center",
+    "shrink-0",
+  );
 
   const optionClass = classNames(
-    "leading-none",
+    "leading-snug",
     "px-2",
-    "py-1",
+    "py-0.5",
     "rounded-md",
     !isDisabled && theme.hoverBg,
   );
@@ -60,8 +70,8 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
     "absolute",
     "inset-0",
     "appearance-none",
-    "w-4",
-    "h-4",
+    "w-5",
+    "h-5",
     "rounded-full",
     "focus:outline-none",
     "focus:ring-offset-0",
@@ -72,13 +82,15 @@ const Radiogroup: React.FC<RadiogroupProps> = ({
 
   const innerDot = classNames(
     "absolute",
-    "inset-0",
-    "m-auto",
-    "w-2",
-    "h-2",
-    "rounded-full",
+    "top-1/2",
+    "left-1/2",
+    "-translate-x-1/2",
+    "-translate-y-1/2",
+    "w-2.5",
+    "h-2.5",
     "scale-0",
-    "peer-checked:scale-100",
+    "rounded-full",
+    "peer-checked:scale-[1.05]",
     "opacity-0",
     "peer-checked:opacity-100",
     "transition-all",

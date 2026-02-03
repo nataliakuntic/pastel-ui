@@ -2,6 +2,7 @@ import CafeImg from "./cafe.png";
 import ForestImg from "./forest.png";
 import PeonyImg from "./peony.png";
 import SandwichImg from "./sandwich.png";
+import SnowImg from "./snow.jpg";
 import YellowFlowerImg from "./yellowflower.png";
 
 const largeCardContent = (scheme: string) => {
@@ -60,6 +61,17 @@ const largeCardContent = (scheme: string) => {
           "Bærums Verk is a historic village in Bærum, Norway, known for its beautifully preserved ironworks heritage and scenic riverside setting. Originally established in the early 17th century as an iron foundry, today Bærums Verk is a vibrant cultural destination with old workshops now being house artisan boutiques, galleries, and cozy cafés.",
         expandedDetails:
           "Beyond its industrial origins, Bærums Verk has evolved into a harmonious blend of history and creativity. Cobblestone paths wind through restored buildings that once echoed with the sound of forges, now filled with the quiet charm of modern craftsmanship. Visitors can explore art exhibitions, enjoy locally sourced cuisine, and experience seasonal events that celebrate Norwegian heritage. Nestled along the river and surrounded by forested hills, it offers both cultural richness and natural tranquility—making it a beloved retreat for locals and travelers alike.",
+      };
+    case "boutique":
+      return {
+        img: SnowImg,
+        alt: "valley near the river covered with snow",
+        title: "Akerselva in winter",
+        subtitle: "River bank road",
+        description:
+          "Akerselva spans gently through Oslo, transforming into a serene winter corridor when snow settles along its banks. The river path becomes softer and slower, framed by bare trees and muted light, offering a rare stillness just minutes from the city center.",
+        expandedDetails:
+          "In winter, Akerselva feels almost suspended in time. Footsteps crunch against packed snow, and the sound of flowing water slips beneath ice and branches. The contrast between dark trunks, white ground, and pale sky creates a restrained, almost monochrome landscape that feels both intimate and expansive.",
       };
     default:
       return {

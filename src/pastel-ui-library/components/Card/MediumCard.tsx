@@ -18,7 +18,10 @@ const theme = (themeName: ThemeName) => {
       "text-subtitle tracking-wider italic font-light font-inter leading-7",
     description: "text-description font-light font-inter leading-7",
     expandedDetails: "text-description font-light font-inter leading-7",
-    containerClasses: `bg-${themeName} px-8 py-7 shadow-md`,
+    containerClasses:
+      themeName === "boutique"
+        ? `bg-card-boutique px-8 py-7 shadow-md`
+        : `bg-${themeName} px-8 py-7 shadow-md`,
     inlineButton: {
       text: `text-sm uppercase font-semibold text-inline-button-${themeName}`,
       hoverBg: `hover:bg-inline-button-${themeName}`,
@@ -56,7 +59,7 @@ const MediumCard: React.FC<MediumCardProps> = ({
     "mt-2",
     styles.inlineButton.text,
     styles.inlineButton.hoverBg,
-    styles.inlineButton.hoverText
+    styles.inlineButton.hoverText,
   );
 
   const contentBackground = classNames(
@@ -64,7 +67,7 @@ const MediumCard: React.FC<MediumCardProps> = ({
     "shadow-md",
     "p-6",
     "text-left",
-    "space-y-3"
+    "space-y-3",
   );
 
   //CONTENT DISPLAY

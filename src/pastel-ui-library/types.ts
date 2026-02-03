@@ -3,4 +3,5 @@ export type ThemeName =
   | "pistachio"
   | "honey"
   | "aquafrost"
-  | "lilac";
+  | "lilac"
+  | "boutique";
