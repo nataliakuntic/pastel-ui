@@ -18,7 +18,7 @@ export const getRadiobuttonThemeStyle = (
 ): RadiobuttonTheme => {
   return {
     legendText: `text-label-text font-inter uppercase font-light text-[13px] tracking-[0.12em]`,
-    labelText: `text-input-text/90 font-inter font-normal`,
+    labelText: `text-input-text/90 font-inter font-light tracking-[0.02em]`,
     border: `border-radio-${themeName} border-[1.75px]`,
     ringFocus:
       themeName === "boutique"
@@ -27,7 +27,7 @@ export const getRadiobuttonThemeStyle = (
     hoverBg: `group-hover:bg-radio-hover-${themeName}`,
     dotChecked: `peer-checked:bg-radio-${themeName}`,
     legendDisabled: `text-disabled-text font-inter uppercase font-light text-[13px] tracking-[0.12em]`,
-    labelDisabled: `text-disabled-text font-inter font-normal`,
+    labelDisabled: `text-disabled-text font-inter font-light tracking-[0.02em]`,
     borderDisabled: `border-disabled-text border-[1.75px]`,
     dotDisabled: `bg-disabled-text`,
   };

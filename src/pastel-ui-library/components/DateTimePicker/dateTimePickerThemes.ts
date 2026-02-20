@@ -26,8 +26,8 @@ export const getDateTimePickerThemeStyle = (
   return {
     border: `${borderColor} ${borderWidth}`,
     background: `bg-default py-[10px] px-[12px]`,
-    text: `text-input-text/90 font-inter font-normal`,
-    textDisabled: `text-disabled-text font-inter font-normal`,
+    text: `text-input-text/90 font-inter font-light tracking-[0.02em]`,
+    textDisabled: `text-disabled-text font-inter font-light tracking-[0.02em]`,
     borderDisabled: `border-disabled-border border-[1.75px]`,
     bgDisabled: `bg-disabled-bg py-[10px] px-[12px]`,
     labelTextDisabled: `text-disabled-text font-inter uppercase font-light text-[13px] tracking-[0.12em]`,

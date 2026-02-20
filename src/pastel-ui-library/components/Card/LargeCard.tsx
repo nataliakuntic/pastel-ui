@@ -9,7 +9,6 @@ interface LargeCardProps extends BaseCardProps {
   colorScheme: ThemeName;
   img: string;
   alt: string;
-  hasContainer: boolean;
   isExpandable: boolean;
 }
 
@@ -40,7 +39,6 @@ const LargeCard: React.FC<LargeCardProps> = ({
   alt,
   description,
   isExpandable,
-  hasContainer,
   expandedDetails,
 }) => {
   //EXPANDED DETAILS LOGIC

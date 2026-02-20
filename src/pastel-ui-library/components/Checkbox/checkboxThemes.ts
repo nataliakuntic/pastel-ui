@@ -24,7 +24,7 @@ export const getCheckboxThemeStyle = (themeName: ThemeName): CheckboxTheme => {
     borderDisabled: `border-disabled-border border-[1.75px]`,
     bgDisabled: `bg-disabled-bg`,
     iconCheckedDisabled: `text-disabled-text`,
-    labelText: `text-input-text/90 font-normal font-inter`,
+    labelText: `text-input-text/90 font-inter font-light tracking-[0.02em]`,
     variants: {
       light: {
         border: `border-checkbox-border-${themeName} border-[1.75px]`,

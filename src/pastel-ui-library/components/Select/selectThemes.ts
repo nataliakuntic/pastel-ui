@@ -24,7 +24,7 @@ export const getSelectThemeStyle = (themeName: ThemeName): SelectTheme => {
   return {
     border: `${borderColor} ${borderWidth}`,
     background: `bg-default py-[11px] px-[12px]`,
-    text: `text-input-text/90 font-inter font-normal`,
+    text: `text-input-text/90 font-inter font-light tracking-[0.02em]`,
     textDisabled: `text-disabled-text font-inter font-normal`,
     borderDisabled: `border-disabled-border border-[1.75px]`,
     bgDisabled: `bg-disabled-bg py-[10px] px-[12px]`,

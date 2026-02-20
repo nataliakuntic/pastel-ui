@@ -24,7 +24,7 @@ export const getTextAreaThemeStyle = (themeName: ThemeName): TextAreaTheme => {
   return {
     border: `${borderColor} ${borderWidth}`,
     background: `bg-default py-4 px-3`,
-    text: `text-input-text/90 font-inter font-normal`,
+    text: `text-input-text font-inter font-light tracking-[0.02em]`,
     borderDisabled: `border-disabled-border border-[1.75px]`,
     bgDisabled: `bg-disabled-bg py-4 px-3`,
     labelTextDisabled: `text-disabled-text font-inter uppercase font-light text-[13px] tracking-[0.12em]`,

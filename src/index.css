@@ -62,6 +62,7 @@ safelist filter.
 
 @theme {
 
+    /* BOUTIQUE SCHEME */
     /* TEXT */
 
     --color-primary: #000000; /*black*/
@@ -134,7 +135,6 @@ safelist filter.
    --color-button-dustyrose-primary: #C18484; /*vintageRose*/
    --color-button-dustyrose-secondary: #E2C3C3; /*dustyRose*/
    --color-button-dustyrose-tertiary: #F7F1F1; /*pinkSnow*/
-   --color-button-dustyrose-disabled: #F1DDDD; /*blushCloud*/
    --color-button-dustyrose-hover: #D0A4A4; /*rosePetal*/
    --color-button-dustyrose-active: #C18484; /*vintageRose*/
    --color-button-dustyrose-primary-hover: #AB6D6D;
@@ -142,17 +142,13 @@ safelist filter.
 
    --color-button-dustyrose-stroke: #D6BABA; /*mauveDust*/
    --color-button-dustyrose-danger-stroke: #E2C3C3; /*dustyRose*/
-   --color-button-dustyrose-disabled-stroke: #E5C7C7; /*blushBeige*/
    --color-button-dustyrose-focus-ring: #CC8787; /*blushCinder*/
-
-   --color-button-dustyrose-disabled-text: #A68A8A; /*antiqueRose*/
 
     /*pistachio*/
 
    --color-button-pistachio-primary: #5F9E8D;
    --color-button-pistachio-secondary: #D8ECCF; /*pistachio*/
    --color-button-pistachio-tertiary: #F1FFEB; /*seaFoam*/
-   --color-button-pistachio-disabled: #D6E6DE; /*mistyMint*/
    --color-button-pistachio-hover: #A8D5C4; /*mintCream*/
    --color-button-pistachio-active: #78B5A1; 
    --color-button-pistachio-primary-hover: #59897E;
@@ -169,7 +165,6 @@ safelist filter.
     --color-button-honey-primary: #D7BE5D; /*amberGrain*/
     --color-button-honey-secondary: #E3D996; /*honey*/
     --color-button-honey-tertiary: #FFF9D5; /*paleSun*/
-    --color-button-honey-disabled: #F8F3DB; /*ivoryMist*/
     --color-button-honey-hover: #E4D07E; /*butterGold*/
     --color-button-honey-active: #D7BE5D; /*amberGrain*/
     --color-button-honey-primary-hover: #CFAE4F;
@@ -186,7 +181,6 @@ safelist filter.
     --color-button-aquafrost-primary: #71ACB3;
     --color-button-aquafrost-secondary: #AFDEE3; /*aquafrost*/
     --color-button-aquafrost-tertiary: #E4F6F8; /*iceMist*/
-    --color-button-aquafrost-disabled: #E3EFF4; /*paleSky*/
     --color-button-aquafrost-hover: #97CCD2; /*iceBlue*/
     --color-button-aquafrost-active: #71ACB3; /*stormTeal*/
     --color-button-aquafrost-primary-hover: #6499A0;
@@ -203,7 +197,6 @@ safelist filter.
     --color-button-lilac-primary: #A48CD8;
     --color-button-lilac-secondary: #C0B0EE; /*lilac*/
     --color-button-lilac-tertiary: #F3EFFF; /*lavenderFog*/
-    --color-button-lilac-disabled: #EEE7F4; /*palePlum*/
     --color-button-lilac-hover: #D8CEFA; /*lavenderDrift*/
     --color-button-lilac-active: #A48CCB;
     --color-button-lilac-primary-hover: #977DCE;
@@ -252,9 +245,9 @@ safelist filter.
     --color-checkbox-text-on-dark-boutique: #EFECE7;
     --color-checkbox-ring-boutique-dark: #AFA79C; /*warmDove*/
 
-    --color-checkbox-border-dustyrose: #D3A9A9; /* deepened pastel border */
-    --color-checkbox-checkmark-dustyrose: #9F5F5F; /* deep warm rose */
-    --color-checkbox-bg-checked-dustyrose: #F4EAEA; /* light rosy wash */
+    --color-checkbox-border-dustyrose: #D0A4A4; /*rosePetal*/
+    --color-checkbox-checkmark-dustyrose: #9E6060; /*deepWarmRose*/
+    --color-checkbox-bg-checked-dustyrose: #F7F1F1; /*pinkSnow*/
     --color-checkbox-ring-dustyrose: rgba(226, 195, 195, 0.45); /* dustyrose at 45% */
     
     --color-checkbox-border-pistachio: #BEDDB1; /* deeper pistachio */
