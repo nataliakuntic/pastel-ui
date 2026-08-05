@@ -12,6 +12,7 @@ safelist filter.
 @source inline("border-button-{dustyrose,pistachio,honey,aquafrost,lilac,boutique}-danger-stroke");
 @source inline("{hover:,active:}border-button-{dustyrose,pistachio,honey,aquafrost,lilac,boutique}-stroke");
 @source inline("focus:ring-button-{dustyrose,pistachio,honey,aquafrost,lilac,boutique}-focus-ring");
+@source inline("bg-{dustyrose,pistachio,honey,aquafrost,lilac,boutique}");
 @source inline("bg-{dustyrose,pistachio,honey,aquafrost,lilac,boutique}-light");
 @source inline("border-{dustyrose,pistachio,honey,aquafrost,lilac,boutique}");
 @source inline("text-inline-button-{dustyrose,pistachio,honey,aquafrost,lilac,boutique}");
@@ -44,20 +45,20 @@ safelist filter.
 @source inline("bg-checkbox-bg-checked-{dustyrose,pistachio,honey,aquafrost,lilac,boutique}");
 
 
- /* COLOR SCHEME PICKER UTILITY */
+/* COLOR SCHEME PICKER UTILITY */
 
- .bg-boutique-split {
+.bg-boutique-split {
     background: linear-gradient(90deg,
-                #0F0F10 0%,
-                #3A3A3D 50%,
-                #E6E3DE 50%,
-                #E6E3DE 100%);
- }
+            #0F0F10 0%,
+            #3A3A3D 50%,
+            #E6E3DE 50%,
+            #E6E3DE 100%);
+}
 
- select {
-     font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        }
- 
+select {
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
 
 
 @theme {
@@ -77,10 +78,10 @@ safelist filter.
     /* MAIN COLORS: COLOR SCHEME PICKER */
 
     --color-dustyrose: #E2C3C3;
-    --color-pistachio: #D8ECCF; 
-    --color-honey: #E3D996; 
-    --color-aquafrost: #AFDEE3; 
-    --color-lilac: #C0B0EE; 
+    --color-pistachio: #D8ECCF;
+    --color-honey: #E3D996;
+    --color-aquafrost: #AFDEE3;
+    --color-lilac: #C0B0EE;
     --color-boutique: #3A3A3D;
 
     /* COLOR ACCORDION EXPANDABLE PANELS */
@@ -132,34 +133,34 @@ safelist filter.
 
     /*dustyrose*/
 
-   --color-button-dustyrose-primary: #C18484; /*vintageRose*/
-   --color-button-dustyrose-secondary: #E2C3C3; /*dustyRose*/
-   --color-button-dustyrose-tertiary: #F7F1F1; /*pinkSnow*/
-   --color-button-dustyrose-hover: #D0A4A4; /*rosePetal*/
-   --color-button-dustyrose-active: #C18484; /*vintageRose*/
-   --color-button-dustyrose-primary-hover: #AB6D6D;
-   --color-button-dustyrose-primary-active: #9E6060;
+    --color-button-dustyrose-primary: #C18484; /*vintageRose*/
+    --color-button-dustyrose-secondary: #E2C3C3; /*dustyRose*/
+    --color-button-dustyrose-tertiary: #F7F1F1; /*pinkSnow*/
+    --color-button-dustyrose-hover: #D0A4A4; /*rosePetal*/
+    --color-button-dustyrose-active: #C18484; /*vintageRose*/
+    --color-button-dustyrose-primary-hover: #AB6D6D;
+    --color-button-dustyrose-primary-active: #9E6060;
 
-   --color-button-dustyrose-stroke: #D6BABA; /*mauveDust*/
-   --color-button-dustyrose-danger-stroke: #E2C3C3; /*dustyRose*/
-   --color-button-dustyrose-focus-ring: #CC8787; /*blushCinder*/
+    --color-button-dustyrose-stroke: #D6BABA; /*mauveDust*/
+    --color-button-dustyrose-danger-stroke: #E2C3C3; /*dustyRose*/
+    --color-button-dustyrose-focus-ring: #CC8787; /*blushCinder*/
 
     /*pistachio*/
 
-   --color-button-pistachio-primary: #5F9E8D;
-   --color-button-pistachio-secondary: #D8ECCF; /*pistachio*/
-   --color-button-pistachio-tertiary: #F1FFEB; /*seaFoam*/
-   --color-button-pistachio-hover: #A8D5C4; /*mintCream*/
-   --color-button-pistachio-active: #78B5A1; 
-   --color-button-pistachio-primary-hover: #59897E;
-   --color-button-pistachio-primary-active: #507F73;
-   
+    --color-button-pistachio-primary: #5F9E8D;
+    --color-button-pistachio-secondary: #D8ECCF; /*pistachio*/
+    --color-button-pistachio-tertiary: #F1FFEB; /*seaFoam*/
+    --color-button-pistachio-hover: #A8D5C4; /*mintCream*/
+    --color-button-pistachio-active: #78B5A1;
+    --color-button-pistachio-primary-hover: #59897E;
+    --color-button-pistachio-primary-active: #507F73;
 
-   --color-button-pistachio-stroke: #2F3E3E; /*deepPine*/
-   --color-button-pistachio-danger-stroke: #A8D5C4; 
-   --color-button-pistachio-focus-ring: #5FA99B; /*tealLeaf*/
 
-    
+    --color-button-pistachio-stroke: #2F3E3E; /*deepPine*/
+    --color-button-pistachio-danger-stroke: #A8D5C4;
+    --color-button-pistachio-focus-ring: #5FA99B; /*tealLeaf*/
+
+
     /*honey*/
 
     --color-button-honey-primary: #D7BE5D; /*amberGrain*/
@@ -177,7 +178,7 @@ safelist filter.
 
 
     /*aquafrost*/
-    
+
     --color-button-aquafrost-primary: #71ACB3;
     --color-button-aquafrost-secondary: #AFDEE3; /*aquafrost*/
     --color-button-aquafrost-tertiary: #E4F6F8; /*iceMist*/
@@ -185,15 +186,15 @@ safelist filter.
     --color-button-aquafrost-active: #71ACB3; /*stormTeal*/
     --color-button-aquafrost-primary-hover: #6499A0;
     --color-button-aquafrost-primary-active: #557F84;
-    
+
     --color-button-aquafrost-stroke: #8C8C8C; /*softGraphite*/
     --color-button-aquafrost-danger-stroke: #AFDEE3; /*aquafrost*/
     --color-button-aquafrost-disabled-stroke: #D3E3EA; /*cloudyBlue*/
     --color-button-aquafrost-focus-ring: #569AB7; /*coolLagoon*/
-    
+
 
     /*lilac*/
-    
+
     --color-button-lilac-primary: #A48CD8;
     --color-button-lilac-secondary: #C0B0EE; /*lilac*/
     --color-button-lilac-tertiary: #F3EFFF; /*lavenderFog*/
@@ -201,38 +202,37 @@ safelist filter.
     --color-button-lilac-active: #A48CCB;
     --color-button-lilac-primary-hover: #977DCE;
     --color-button-lilac-primary-active: #8A6FC4; /* irisSmoke */
-    
+
     --color-button-lilac-stroke: #C7B3DF; /*powderLilac*/
     --color-button-lilac-danger-stroke: #C0B0EE; /*lilac*/
     --color-button-lilac-disabled-stroke: #D6CCE6; /*hazyLavender*/
     --color-button-lilac-focus-ring: #9672BE; /*orchidMist*/
-    
 
-   /* CARD COLORS */ 
 
-   /* main text*/
+    /* CARD COLORS */
 
-   --color-title: #1A1A1A; 
-   --color-subtitle: #A3A3A3;
-   --color-description:#57534E;
+    /* main text*/
 
-   /* border*/
+    --color-title: #1A1A1A;
+    --color-subtitle: #A3A3A3;
+    --color-description: #57534E;
 
-   --color-platinum-light: #E5E5E5; /*platinum-light*/
+    /* border*/
 
-   /* inline buttons */
+    --color-platinum-light: #E5E5E5; /*platinum-light*/
 
-   --color-card-boutique: #DCD8D2;
+    /* inline buttons */
 
-   --color-inline-button-hover-text: #FFFFFF; /*white*/
+    --color-card-boutique: #DCD8D2;
 
-   --color-inline-button-dustyrose: #A87575; /*roseTaupe*/
-   --color-inline-button-pistachio: #7B946F; /*sageGrove*/
-   --color-inline-button-honey: #A59B56; /*goldenOlive*/
-   --color-inline-button-aquafrost: #569AB7; /*coolLagoon*/
-   --color-inline-button-lilac: #8A75AC; /*lavenderMist*/
-   --color-inline-button-boutique: #3A3A3D;
-    /*boutique*/
+    --color-inline-button-hover-text: #FFFFFF; /*white*/
+
+    --color-inline-button-dustyrose: #A87575; /*roseTaupe*/
+    --color-inline-button-pistachio: #7B946F; /*sageGrove*/
+    --color-inline-button-honey: #A59B56; /*goldenOlive*/
+    --color-inline-button-aquafrost: #569AB7; /*coolLagoon*/
+    --color-inline-button-lilac: #8A75AC; /*lavenderMist*/
+    --color-inline-button-boutique: #3A3A3D; /*boutique*/
 
     /* CHECKBOX COLORS */
 
@@ -249,7 +249,7 @@ safelist filter.
     --color-checkbox-checkmark-dustyrose: #9E6060; /*deepWarmRose*/
     --color-checkbox-bg-checked-dustyrose: #F7F1F1; /*pinkSnow*/
     --color-checkbox-ring-dustyrose: rgba(226, 195, 195, 0.45); /* dustyrose at 45% */
-    
+
     --color-checkbox-border-pistachio: #BEDDB1; /* deeper pistachio */
     --color-checkbox-checkmark-pistachio: #708E6B; /* herb green */
     --color-checkbox-bg-checked-pistachio: #F4FAF2; /* soft green tint */
@@ -303,8 +303,7 @@ safelist filter.
     --color-radio-lilac: #9672BE; /*orchidMist*/
     --color-radio-boutique: #3A3A3D; /*boutique*/
 
-    --color-radio-boutique-focus-ring: #DCD8D2;
-        /*warmDove*/
+    --color-radio-boutique-focus-ring: #DCD8D2; /*warmDove*/
 
     --color-radio-hover-dustyrose: #F6ECEC; /* roseWood 8% */
     --color-radio-hover-pistachio: #EEF6F3; /* mossTeal 8% */
@@ -312,7 +311,7 @@ safelist filter.
     --color-radio-hover-aquafrost: #E8F2F4; /* coolLagoon 8% */
     --color-radio-hover-lilac: #F2EEF8; /* orchidMist 8% */
     --color-radio-hover-boutique: #F5F4F2; /*boneWhite*/
-        
+
 
     --color-radio-text-disabled: #757575; /*sonicSilver*/
 
@@ -323,18 +322,7 @@ safelist filter.
     --color-disabled-text: #A8A8A8; /*sonicSilver*/
     --color-disabled-placeholder: #9E9E9E; /*fogGray*/
 
-
-    /* BRAND COLORS */
-
-    --color-hero: #FFE8E8; /*petalPink*/
-    --color-platinum: #D9D9D9; /*platinum*/
-    --color-whitesmoke: #F5F5F5; /*whiteSmoke*/
-    --color-lavenderblue: #D2C2FF; /*lavenderBlue*/
-    --color-violetmist: #A78BFA; /*violetMist*/
-
     /* BRAND FONTS */
 
     --font-inter: "Inter", "sans-serif";
-    --font-roboto: "Roboto Mono", "mono";
-   
-    }
+}
