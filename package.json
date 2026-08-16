@@ -2,6 +2,9 @@
   "name": "@pastel-ui/pastel-ui",
   "description": "react ui component library with pastel palette and magazine look",
   "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
